@@ -1,0 +1,45 @@
+﻿{
+  "Perguntas": [
+    {
+      "IdPergunta": 1,
+      "TextoPergunta": "Quanto de dinheiro você poupa por mês?",
+      "Explicacao": "O empréstimo pessoal pode ser encontrado em taxa mínima de 2% ao mês, o que corresponde a 24% ao ano, estes percentuais podem ficar muito mais altos dependendo da Instituição Financeira escolhida.",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "20% da renda",
+          "Dica": "Muito bom! Esta é a porcentagem inicial indicada para quem quer se organizar financeiramente.",
+          "Dinehiro": 1,
+          "Felicidade": 1
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Não consigo poupar",
+          "Dica": "Pense nisso, se planeje para cortar gastos. Caso ocorra alguma emergência, será necessário pegar um empréstimo, o que não é indicado.",
+          "Dinehiro": -1,
+          "Felicidade": -1
+        }
+      ]
+    },
+    {
+      "IdPergunta": 2,
+      "TextoPergunta": "Se você começar a poupar. Em qual produto pensa em investir?",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Só conheço a poupança.",
+          "Dica": "Assim como outros produtos de baixo risco, que variam de acordo com a taxa básica de Juros (Selic), a poupança também possui esta rentabilidade, porém, é a menor do mercado.",
+          "Dinehiro": 1,
+          "Felicidade": 1
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Irei procurar o Gerente da minha conta corrente.",
+          "Dica": "Excelente! Os bancos oferecem esse serviço gratuitamente e os gerentes de contas são capacitados para orientar o cliente no produto que possui maior rentabilidade, de acordo com o seu perfil.",
+          "Dinehiro": -1,
+          "Felicidade": -1
+        }
+      ]
+    }
+  ]
+}

@@ -41,9 +41,9 @@ namespace FinancesPlay
             }
         }
 
-        private void BtComecar_Clicked(object sender, EventArgs e)
+        public async void BtComecar_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new Pergunta());
+            //await MainPage = new NavigationPage(new Paginas.Pergunta());
         }
     }
 }

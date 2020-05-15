@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FinancesPlay.Paginas.Resposta">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="aa"
+                   x:Name="lblDica"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   FontSize="25"/>
+            <Button Text="Continuar"
+                    x:Name="btnContinuar"
+                    Clicked="btnContinuar_Clicked"
+                    BackgroundColor="Blue"
+                    TextColor="White"
+                    FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

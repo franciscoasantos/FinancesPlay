@@ -24,18 +24,61 @@
     {
       "IdPergunta": 2,
       "TextoPergunta": "Se você começar a poupar. Em qual produto pensa em investir?",
+      "Explicação": "Produtos de baixo risco que rendem mais que a poupança: Tesouro Selic, CDB, LCI, LCA",
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Só conheço a poupança.",
+          "Texto": "Só conheço a poupança",
           "Dica": "Assim como outros produtos de baixo risco, que variam de acordo com a taxa básica de Juros (Selic), a poupança também possui esta rentabilidade, porém, é a menor do mercado.",
           "Dinheiro": 1,
           "Felicidade": 1
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Irei procurar o Gerente da minha conta corrente.",
+          "Texto": "Irei procurar o Gerente da minha conta corrente",
           "Dica": "Excelente! Os bancos oferecem esse serviço gratuitamente e os gerentes de contas são capacitados para orientar o cliente no produto que possui maior rentabilidade, de acordo com o seu perfil.",
+          "Dinheiro": -1,
+          "Felicidade": -1
+        }
+      ]
+    },
+    {
+      "IdPergunta": 3,
+      "TextoPergunta": "Você possui cartão de crédito? Como é feito o pagamento da sua fatura?",
+      "Explicacao": "A Taxa de parcelamento da fatura do cartão de crédito pode variar de 2,5% a 8% ao mês, o que pode gerar o efeito “bola de neve” para os próximos meses.",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Pago integralmente",
+          "Dica": "Correto! Sempre ajuste suas despesas para que todo mês a fatura seja paga em seu valor total.",
+          "Dinheiro": 1,
+          "Felicidade": 1
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Sempre parcelo a fatura",
+          "Dica": "O que você pensa ser uma folguinha no orçamento, nada mais é do que formas de você se endividar ainda mais.",
+          "Dinheiro": -1,
+          "Felicidade": -1
+        }
+      ]
+    },
+    {
+      "IdPergunta": 4,
+      "TextoPergunta": "Caso você seja desligado da empresa e receba um acerto de aproximadamente R$ 20.000,00. Você compraria um carro?",
+      "Explicacao": "Financiamentos devem ser muito bem avaliados. Suponhamos que um Banco pratica a taxa de 1% ao mês. Se o valor do automóvel é R$40.000,00, e será pago em 60 meses, a sua parcela será de R$1.066,00 sendo que R$400,00 correspondem apenas aos juros.\nAutomóveis perdem de 20% a 30% do seu valor de compra (taxa de depreciação) no período de dois anos.",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Não. Ainda não é minha necessidade",
+          "Dica": "Muito bom. Hoje contamos com o auxílio de aplicativos de transporte com conforto e valores que cabem no bolso. Se não é sua necessidade no momento, invista o valor e aguarde o momento certo de comprar. Quem sabe não pague à vista!",
+          "Dinheiro": 1,
+          "Felicidade": 1
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Sim, daria todo o valor de entrada",
+          "Dica": "Pense bem. Um carro não é considerado investimento. Além de não ter os 20.000 disponíveis, ainda irá adquirir parcelas de financiamento. Essa decisão cabe mesmo no seu orçamento?",
           "Dinheiro": -1,
           "Felicidade": -1
         }

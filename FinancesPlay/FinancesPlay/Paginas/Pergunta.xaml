@@ -18,13 +18,13 @@
                    HorizontalTextAlignment="Center"/>
             <Button Text=""
                     x:Name="btnAlternativaA"
-                    
+                    Clicked="btnAlternativaA_Clicked"
                     BackgroundColor="Blue"
                     TextColor="White"
                     FontSize="Large"/>
-            <Button Text="Não consigo poupar"
+            <Button Text=""
                     x:Name="btnAlternativaB"
-                    
+                    Clicked="btnAlternativaB_Clicked"
                     BackgroundColor="Blue"
                     TextColor="White"
                     FontSize="Large"/>

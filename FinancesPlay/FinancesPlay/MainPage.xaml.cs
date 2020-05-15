@@ -15,16 +15,13 @@ namespace FinancesPlay
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        public static ListaPerguntas PerguntaList;
+        public static ListaPerguntas lstPergunta = LerJson();
 
         public MainPage()
         {
             InitializeComponent();
-
-            //Chama método para carregar as perguntas
-            PerguntaList= LerJson();
         }
-        public ListaPerguntas LerJson()
+        public static ListaPerguntas LerJson()
         {
             string jsonFileName = "dados.json";
             string nomePasta = "Desserializar";

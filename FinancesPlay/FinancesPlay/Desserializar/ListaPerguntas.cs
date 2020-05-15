@@ -6,6 +6,6 @@ namespace FinancesPlay.Desserializar
 {
     public class ListaPerguntas
     {
-        public IList<Pergunta> Perguntas { get; set; }
+        public List<Pergunta> Perguntas { get; set; }
     }
 }

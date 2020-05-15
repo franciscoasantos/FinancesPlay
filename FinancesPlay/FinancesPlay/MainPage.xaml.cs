@@ -12,24 +12,23 @@ using Xamarin.Forms;
 
 namespace FinancesPlay
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        public static ListaPerguntas PerguntaList;
+
         public MainPage()
         {
             InitializeComponent();
 
             //Chama método para carregar as perguntas
-            LerJson();
+            PerguntaList= LerJson();
         }
-
-        public void LerJson()
+        public ListaPerguntas LerJson()
         {
             string jsonFileName = "dados.json";
             string nomePasta = "Desserializar";
-            ListaPerguntas objPerguntaList = new ListaPerguntas();
+            ListaPerguntas PerguntaList = new ListaPerguntas();
             var assembly = typeof(MainPage).GetTypeInfo().Assembly;
             Stream stream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{nomePasta}.{jsonFileName}");
             using (var reader = new System.IO.StreamReader(stream))
@@ -37,13 +36,14 @@ namespace FinancesPlay
                 var jsonString = reader.ReadToEnd();
 
                 //Convert Objetos JSON para uma lista generica
-                objPerguntaList = JsonConvert.DeserializeObject<ListaPerguntas>(jsonString);
+                PerguntaList = JsonConvert.DeserializeObject<ListaPerguntas>(jsonString);
             }
+            return PerguntaList;
         }
 
-        public async void BtComecar_Clicked(object sender, EventArgs e)
+        public void BtComecar_Clicked(object sender, EventArgs e)
         {
-            //await MainPage = new NavigationPage(new Paginas.Pergunta());
+            Navigation.PushModalAsync(new NavigationPage(new Paginas.Pergunta()));
         }
     }
 }

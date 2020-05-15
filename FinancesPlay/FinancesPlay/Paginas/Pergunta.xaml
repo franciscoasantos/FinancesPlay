@@ -4,22 +4,26 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="FinancesPlay.Paginas.Pergunta">
+             x:Class="FinancesPlay.Paginas.Pergunta"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Quanto de dinheiro você poupa por mês?"
+            <Label Text=""
+                   x:Name="lblPergunta"
                    HorizontalOptions="Center"
                    VerticalOptions="StartAndExpand"
                    FontSize="30"
                    BackgroundColor="WhiteSmoke"
                    TextColor="Black"
                    HorizontalTextAlignment="Center"/>
-            <Button Text="20% da renda"
+            <Button Text=""
+                    x:Name="btnAlternativaA"
                     
                     BackgroundColor="Blue"
                     TextColor="White"
                     FontSize="Large"/>
             <Button Text="Não consigo poupar"
+                    x:Name="btnAlternativaB"
                     
                     BackgroundColor="Blue"
                     TextColor="White"

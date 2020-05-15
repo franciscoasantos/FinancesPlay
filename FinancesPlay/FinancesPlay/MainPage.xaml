@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="FinancesPlay.MainPage"
+             BackgroundColor="White"
              NavigationPage.HasNavigationBar="false">
 
     <StackLayout>

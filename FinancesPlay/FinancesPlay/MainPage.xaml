@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="FinancesPlay.MainPage"
-             BackgroundColor="White"
+             BackgroundColor="#242a41"
              NavigationPage.HasNavigationBar="false">
 
     <StackLayout>
@@ -13,13 +13,18 @@
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand"
            FontSize="40"
-           TextColor="Black"/>
+           TextColor="#cfdde8"/>
         <Button Text="Começar"
                 x:Name="BtComecar"
                 Clicked="BtComecar_Clicked"
-                BackgroundColor="Blue"
-                TextColor="White"
-                FontSize="Large"/>
+                    BackgroundColor="#e6822f"
+                    TextColor="White"
+                    FontSize="Small"
+                    CornerRadius="10"
+                    BorderColor="#87593a"
+                    BorderWidth="0.2"
+                    HorizontalOptions="Center"
+                    Margin="50"/>
     </StackLayout>
 
 </ContentPage>

@@ -5,19 +5,78 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="FinancesPlay.Paginas.Resposta">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="aa"
+    <FlexLayout Direction="Column" BackgroundColor="#2d425b">
+
+        <!-- Barra de status -->
+        <FlexLayout Direction="Column" FlexLayout.Grow="0.2" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Dinheiro" TextColor="#cfdde8" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="Body"/>
+                <ProgressBar Progress="0.5"
+                         x:Name="pbDinheiro"
+                         ProgressColor="Gold"
+                         Grid.Row="1"
+                         Grid.Column="0"/>
+                <Label Text="Humor" TextColor="#cfdde8" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="Body"/>
+                <ProgressBar Progress="0.5"
+                         x:Name="pbHumor"
+                         ProgressColor="BlueViolet"
+                         Grid.Row="1"
+                         Grid.Column="1"/>
+                <Label Text="Conhecimento Financeiro" TextColor="#cfdde8" Grid.Row="2" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" FontSize="Body"/>
+                <ProgressBar Progress="0.5"
+                         x:Name="pbConhecimento"
+                         ProgressColor="Green"
+                         
+                         Grid.Row="3"
+                         Grid.ColumnSpan="2"/>
+            </Grid>
+        </FlexLayout>
+
+        <!-- Conteúdo  -->
+        <FlexLayout FlexLayout.Grow="1" Direction="Column" BackgroundColor="#242940">
+            <!-- Perguntas -->
+            <Label Text=""
                    x:Name="lblDica"
-                   VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" 
-                   FontSize="25"/>
+                   Margin="10"
+                   FontSize="Large"
+                   TextColor="#cfdde8"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Start"/>
+            
+            <Label Text=""
+                   x:Name="lblExplicacao"
+                   Margin="10"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   TextColor="#cfdde8"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Start"/>
+        </FlexLayout>
+
+<!-- Alternativas -->
+        <FlexLayout Direction="Row"
+                    FlexLayout.Grow="0.2"
+                    AlignItems="Center"
+                    JustifyContent="SpaceEvenly">
             <Button Text="Continuar"
                     x:Name="btnContinuar"
                     Clicked="btnContinuar_Clicked"
-                    BackgroundColor="Blue"
+                    BackgroundColor="#e6822f"
                     TextColor="White"
-                    FontSize="Large"/>
-        </StackLayout>
-    </ContentPage.Content>
+                    FontSize="Small"
+                    CornerRadius="10"
+                    BorderColor="#87593a"
+                    BorderWidth="0.2"/>
+        </FlexLayout>
+    </FlexLayout>
 </ContentPage>

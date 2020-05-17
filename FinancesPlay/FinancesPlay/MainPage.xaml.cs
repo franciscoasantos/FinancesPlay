@@ -1,13 +1,9 @@
 ﻿using FinancesPlay.Desserializar;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace FinancesPlay
@@ -20,6 +16,7 @@ namespace FinancesPlay
         public MainPage()
         {
             InitializeComponent();
+            Sons.carregarSons();
         }
         public static ListaPerguntas LerJson()
         {
@@ -40,7 +37,9 @@ namespace FinancesPlay
 
         public void BtComecar_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new Paginas.Pergunta()));
+            Sons.clique.Play();
+
+            Navigation.PushAsync(new Paginas.Pergunta());
         }
     }
 }

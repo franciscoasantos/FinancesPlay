@@ -12,16 +12,19 @@
 
   <ItemGroup>
     <None Remove="dados.json" />
+    <None Remove="Sons\click.ogg" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Desserializar\dados.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sons\click.ogg" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.4.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>

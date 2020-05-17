@@ -15,6 +15,9 @@ namespace FinancesPlay.Paginas
     {
         public Alternativa alternativaA { get; set; }
         public Alternativa alternativaB { get; set; }
+        public static double dinheiro { get; set; }
+        public static double humor { get; set; }
+        public static double conhecimento { get; set; }
 
         public int idPergunta = 1;
         public Pergunta()
@@ -26,6 +29,10 @@ namespace FinancesPlay.Paginas
         {
             try
             {
+                pbDinheiro.ProgressTo(pbDinheiro.Progress += dinheiro, 500, Easing.Linear);
+                pbHumor.ProgressTo(pbHumor.Progress += humor, 500, Easing.Linear);
+                pbConhecimento.ProgressTo(pbConhecimento.Progress += conhecimento, 500, Easing.Linear);
+
                 var perguntas = (from pergunta in MainPage.lstPergunta.Perguntas
                                  where (pergunta.IdPergunta == idPergunta)
                                  select pergunta).First();
@@ -50,14 +57,14 @@ namespace FinancesPlay.Paginas
 
         private void btnAlternativaA_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new Paginas.Resposta(this.alternativaA)));
-
+            Sons.clique.Play();
+            Navigation.PushAsync(new Paginas.Resposta(this.alternativaA));
         }
 
         private void btnAlternativaB_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new Paginas.Resposta(this.alternativaB)));
-
+            Sons.clique.Play();
+            Navigation.PushAsync(new Paginas.Resposta(this.alternativaB));
         }
     }
 }

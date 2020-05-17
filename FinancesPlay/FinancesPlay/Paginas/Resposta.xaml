@@ -21,19 +21,19 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Dinheiro" TextColor="#cfdde8" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="Body"/>
-                <ProgressBar Progress="0.5"
+                <ProgressBar Progress="0"
                          x:Name="pbDinheiro"
                          ProgressColor="Gold"
                          Grid.Row="1"
                          Grid.Column="0"/>
                 <Label Text="Humor" TextColor="#cfdde8" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="Body"/>
-                <ProgressBar Progress="0.5"
+                <ProgressBar Progress="0"
                          x:Name="pbHumor"
                          ProgressColor="BlueViolet"
                          Grid.Row="1"
                          Grid.Column="1"/>
                 <Label Text="Conhecimento Financeiro" TextColor="#cfdde8" Grid.Row="2" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" FontSize="Body"/>
-                <ProgressBar Progress="0.5"
+                <ProgressBar Progress="0"
                          x:Name="pbConhecimento"
                          ProgressColor="Green"
                          

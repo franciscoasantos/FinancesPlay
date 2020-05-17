@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Security;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,14 +25,17 @@ namespace FinancesPlay.Paginas
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            dinheiro = 0.5;
+            humor = 0.5;
+            conhecimento = 0;
         }
         protected override void OnAppearing()
         {
             try
             {
-                pbDinheiro.ProgressTo(pbDinheiro.Progress += dinheiro, 500, Easing.Linear);
-                pbHumor.ProgressTo(pbHumor.Progress += humor, 500, Easing.Linear);
-                pbConhecimento.ProgressTo(pbConhecimento.Progress += conhecimento, 500, Easing.Linear);
+                pbDinheiro.Progress = dinheiro;
+                pbHumor.Progress = humor;
+                pbConhecimento.Progress = conhecimento;
 
                 var perguntas = (from pergunta in MainPage.lstPergunta.Perguntas
                                  where (pergunta.IdPergunta == idPergunta)
@@ -57,12 +61,12 @@ namespace FinancesPlay.Paginas
 
         private void btnAlternativaA_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Paginas.Resposta(this.alternativaA));
+            Navigation.PushAsync(new Paginas.Resposta(this.alternativaA),false);
         }
 
         private void btnAlternativaB_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Paginas.Resposta(this.alternativaB));
+            Navigation.PushAsync(new Paginas.Resposta(this.alternativaB),false);
         }
     }
 }

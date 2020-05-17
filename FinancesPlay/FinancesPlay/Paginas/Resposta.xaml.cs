@@ -41,17 +41,17 @@ namespace FinancesPlay.Paginas
         private void setDinheiro(double valor)
         {
             Pergunta.dinheiro += (valor * 2) / 100;
-            pbDinheiro.ProgressTo(pbDinheiro.Progress += Pergunta.dinheiro, 500, Easing.Linear);
+            pbDinheiro.ProgressTo(Pergunta.dinheiro, 500, Easing.Linear);
         }
         private void setHumor(double valor)
         {
             Pergunta.humor += (valor * 2) / 100;
-            pbHumor.ProgressTo(pbHumor.Progress += Pergunta.humor, 500, Easing.Linear);
+            pbHumor.ProgressTo(Pergunta.humor, 500, Easing.Linear);
         }
         private void setConhecimento(double valor)
         {
             Pergunta.conhecimento += (valor * 2) / 100;
-            pbConhecimento.ProgressTo(pbConhecimento.Progress += Pergunta.conhecimento, 500, Easing.Linear);
+            pbConhecimento.ProgressTo(Pergunta.conhecimento, 500, Easing.Linear);
         }
         private void btnContinuar_Clicked(object sender, EventArgs e)
         {
@@ -60,7 +60,7 @@ namespace FinancesPlay.Paginas
                 DisplayAlert("É bom saber!", Alternativa.Explicacao, "Entendi");
             }
             Sons.clique.Play();
-            Application.Current.MainPage.Navigation.PopAsync();
+            Application.Current.MainPage.Navigation.PopAsync(false);
         }
     }
 }

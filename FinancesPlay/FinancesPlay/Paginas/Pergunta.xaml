@@ -44,21 +44,21 @@
         </FlexLayout>
 
         <!-- Perguntas -->
-        <FlexLayout FlexLayout.Grow="1" BackgroundColor="#242940">
-            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
+        <FlexLayout FlexLayout.Grow="1" 
+                    BackgroundColor="#242940" 
+                    HorizontalOptions="Start"
+                    JustifyContent="Center">
+            <Label Text="Lorem ipsum dolor sit amet?"
                    x:Name="lblPergunta"
                    Margin="10"
                    FontSize="Large"
-                   TextColor="#cfdde8"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Start"/>
+                   TextColor="#cfdde8"/>
         </FlexLayout>
 
         <!-- Alternativas -->
-        <FlexLayout Direction="Row"
+        <FlexLayout Direction="Column"
                     FlexLayout.Grow="0.2"
-                    AlignItems="Center"
-                        JustifyContent="SpaceEvenly">
+                    JustifyContent="SpaceEvenly">
             <Button Text=""
                     x:Name="btnAlternativaA"
                     Clicked="btnAlternativaA_Clicked"
@@ -67,7 +67,8 @@
                     FontSize="Small"
                     CornerRadius="10"
                     BorderColor="#87593a"
-                    BorderWidth="0.2"/>
+                    BorderWidth="0.2"
+                    Margin="5"/>
             <Button Text=""
                     x:Name="btnAlternativaB"
                     Clicked="btnAlternativaB_Clicked"
@@ -76,7 +77,8 @@
                     FontSize="Small"
                     CornerRadius="10"
                     BorderColor="#87593a"
-                    BorderWidth="0.2"/>
+                    BorderWidth="0.2"
+                    Margin="5"/>
         </FlexLayout>
     </FlexLayout>
 </ContentPage>

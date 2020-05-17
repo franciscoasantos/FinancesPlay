@@ -19,8 +19,16 @@ namespace FinancesPlay.Paginas
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-
+            NavigationPage.SetHasBackButton(this, false);
             this.Alternativa = Alternativa;
+
+            if(Alternativa.Certa){
+                Sons.dinheiro.Play();
+            }
+            else
+            {
+                Sons.errado.Play();
+            }
 
             lblDica.Text = Alternativa.Dica;
 

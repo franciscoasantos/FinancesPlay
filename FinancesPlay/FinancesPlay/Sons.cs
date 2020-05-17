@@ -11,18 +11,35 @@ namespace FinancesPlay
     class Sons
     {
         public static ISimpleAudioPlayer clique { get; set; }
+        public static ISimpleAudioPlayer dinheiro { get; set; }
+        public static ISimpleAudioPlayer errado { get; set; }
         public static void carregarSons()
         {
-            string soundFileName = "click.ogg";
             string nomePasta = "Sons";
-
+            string soundFileName;
             var assembly = typeof(MainPage).GetTypeInfo().Assembly;
+            Stream audioStream;
+
+            //Carregar som de clique
             var clickSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
-
-            Stream audioStream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{nomePasta}.{soundFileName}");
+            soundFileName = "click.ogg";
+            audioStream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{nomePasta}.{soundFileName}");
             clickSound.Load(audioStream);
-
             clique = clickSound;
+
+            //Carregar som de dinheiro
+            var cashSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+            soundFileName = "dinheiro.ogg";
+            audioStream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{nomePasta}.{soundFileName}");
+            cashSound.Load(audioStream);
+            dinheiro = cashSound;
+
+            //Carregar som de errado
+            var wrongSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+            soundFileName = "errado.ogg";
+            audioStream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{nomePasta}.{soundFileName}");
+            wrongSound.Load(audioStream);
+            errado = wrongSound;
         }
     }
 }

@@ -57,13 +57,11 @@ namespace FinancesPlay.Paginas
 
         private void btnAlternativaA_Clicked(object sender, EventArgs e)
         {
-            Sons.clique.Play();
             Navigation.PushAsync(new Paginas.Resposta(this.alternativaA));
         }
 
         private void btnAlternativaB_Clicked(object sender, EventArgs e)
         {
-            Sons.clique.Play();
             Navigation.PushAsync(new Paginas.Resposta(this.alternativaB));
         }
     }

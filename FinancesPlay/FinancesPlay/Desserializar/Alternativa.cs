@@ -13,5 +13,6 @@ namespace FinancesPlay.Desserializar
         public int Dinheiro { get; set; }
         public int Felicidade { get; set; }
         public int Conhecimento { get; set; }
+        public bool Certa { get; set; }
     }
 }

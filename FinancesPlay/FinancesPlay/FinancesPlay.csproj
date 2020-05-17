@@ -13,6 +13,8 @@
   <ItemGroup>
     <None Remove="dados.json" />
     <None Remove="Sons\click.ogg" />
+    <None Remove="Sons\dinheiro.ogg" />
+    <None Remove="Sons\errado.ogg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +22,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Sons\click.ogg" />
+    <EmbeddedResource Include="Sons\dinheiro.ogg" />
+    <EmbeddedResource Include="Sons\errado.ogg" />
   </ItemGroup>
 
   <ItemGroup>

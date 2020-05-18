@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FinancesPlay.Paginas.SelecionarAvatar"
+             NavigationPage.HasNavigationBar="false">
+
+    <FlexLayout Direction="Column" BackgroundColor="#2d425b">
+        <FlexLayout FlexLayout.Grow="0.2"
+                    JustifyContent="Center"
+                    AlignItems="Center">
+            <Label TextColor="WhiteSmoke"
+                   FontAttributes="Bold"
+                   FontSize="Title">Selecione seu avatar:</Label>
+        </FlexLayout>
+        <FlexLayout FlexLayout.Grow="0.5" 
+                    BackgroundColor="WhiteSmoke"                    
+                    JustifyContent="Center"
+                    AlignItems="Center">
+            <CarouselView x:Name="cvAvatar">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <FlexLayout Direction="Column"
+                                    JustifyContent="Center"
+                                    AlignItems="Center">
+                            <Label Text="{Binding Nome}" FontSize="Medium" HorizontalOptions="Center" />
+                            <Image Source="{Binding Arquivo}" 
+                                       Aspect="AspectFill"
+                                       HeightRequest="366"
+                                       WidthRequest="288"
+                                       HorizontalOptions="Center" />
+                        </FlexLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </FlexLayout>
+        <!-- Botão continuar -->
+        <FlexLayout Direction="Row"
+                    FlexLayout.Grow="0.2"
+                    AlignItems="Center"
+                    JustifyContent="SpaceEvenly">
+            <Button Text="Escolher"
+                    x:Name="btnEscolher"
+                    Clicked="btnEscolher_Clicked"
+                    BackgroundColor="#e6822f"
+                    TextColor="White"
+                    FontSize="Small"
+                    CornerRadius="10"
+                    BorderColor="#87593a"
+                    BorderWidth="0.2"/>
+        </FlexLayout>
+    </FlexLayout>
+</ContentPage>

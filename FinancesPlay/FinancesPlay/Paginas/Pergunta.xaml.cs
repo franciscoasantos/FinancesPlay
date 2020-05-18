@@ -1,4 +1,5 @@
 ﻿using FinancesPlay.Desserializar;
+using FinancesPlay.Imagens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,15 +20,19 @@ namespace FinancesPlay.Paginas
         public static double dinheiro { get; set; }
         public static double humor { get; set; }
         public static double conhecimento { get; set; }
+        public static Avatar Avatar;
 
         public int idPergunta = 1;
-        public Pergunta()
+        public Pergunta(Avatar avatar)
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            Avatar = avatar;
+            sfAvAvatar.ImageSource = avatar.Arquivo;
             dinheiro = 0.5;
             humor = 0.5;
             conhecimento = 0;
+            
         }
         protected override void OnAppearing()
         {

@@ -63,7 +63,7 @@
                    VerticalTextAlignment="Start"/>
         </FlexLayout>
 
-<!-- Alternativas -->
+<!-- Botão continuar -->
         <FlexLayout Direction="Row"
                     FlexLayout.Grow="0.2"
                     AlignItems="Center"

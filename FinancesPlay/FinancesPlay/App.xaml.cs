@@ -8,8 +8,8 @@ namespace FinancesPlay
     {
         public App()
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjU4NjcxQDMxMzgyZTMxMmUzMFd5RlpnbW4raGhMYSs3TkZUVUVrdlVHb1IybllEYThLUmttWUxZMUJ1R3M9");
             InitializeComponent();
-
             MainPage = new NavigationPage(new MainPage());
         }
 

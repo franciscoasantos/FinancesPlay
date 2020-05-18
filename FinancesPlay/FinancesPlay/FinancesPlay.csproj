@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -12,6 +12,21 @@
 
   <ItemGroup>
     <None Remove="dados.json" />
+    <None Remove="Imagens\avatar1.png" />
+    <None Remove="Imagens\avatar10.png" />
+    <None Remove="Imagens\avatar11.png" />
+    <None Remove="Imagens\avatar12.png" />
+    <None Remove="Imagens\avatar13.png" />
+    <None Remove="Imagens\avatar14.png" />
+    <None Remove="Imagens\avatar15.png" />
+    <None Remove="Imagens\avatar2.png" />
+    <None Remove="Imagens\avatar3.png" />
+    <None Remove="Imagens\avatar4.png" />
+    <None Remove="Imagens\avatar5.png" />
+    <None Remove="Imagens\avatar6.png" />
+    <None Remove="Imagens\avatar7.png" />
+    <None Remove="Imagens\avatar8.png" />
+    <None Remove="Imagens\avatar9.png" />
     <None Remove="Sons\click.ogg" />
     <None Remove="Sons\dinheiro.ogg" />
     <None Remove="Sons\errado.ogg" />
@@ -21,19 +36,46 @@
     <EmbeddedResource Include="Desserializar\dados.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\avatar1.png" />
+    <EmbeddedResource Include="Imagens\avatar10.png" />
+    <EmbeddedResource Include="Imagens\avatar11.png" />
+    <EmbeddedResource Include="Imagens\avatar12.png" />
+    <EmbeddedResource Include="Imagens\avatar13.png" />
+    <EmbeddedResource Include="Imagens\avatar14.png" />
+    <EmbeddedResource Include="Imagens\avatar15.png" />
+    <EmbeddedResource Include="Imagens\avatar2.png" />
+    <EmbeddedResource Include="Imagens\avatar3.png" />
+    <EmbeddedResource Include="Imagens\avatar4.png" />
+    <EmbeddedResource Include="Imagens\avatar5.png" />
+    <EmbeddedResource Include="Imagens\avatar6.png" />
+    <EmbeddedResource Include="Imagens\avatar7.png" />
+    <EmbeddedResource Include="Imagens\avatar8.png" />
+    <EmbeddedResource Include="Imagens\avatar9.png" />
     <EmbeddedResource Include="Sons\click.ogg" />
     <EmbeddedResource Include="Sons\dinheiro.ogg" />
     <EmbeddedResource Include="Sons\errado.ogg" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CarouselView.FormsPlugin" Version="5.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="SkiaSharp" Version="1.68.2.1" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.1.0.52" />
     <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.4.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Paginas\SelecionarAvatar.xaml.cs">
+      <DependentUpon>SelecionarAvatar.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Paginas\SelecionarAvatar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Paginas\Pergunta.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

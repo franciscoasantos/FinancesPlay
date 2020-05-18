@@ -39,7 +39,7 @@ namespace FinancesPlay
         {
             Sons.clique.Play();
 
-            Navigation.PushAsync(new Paginas.Pergunta());
+            Navigation.PushAsync(new Paginas.SelecionarAvatar());
         }
     }
 }

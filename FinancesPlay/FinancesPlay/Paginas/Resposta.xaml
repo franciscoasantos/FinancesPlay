@@ -2,41 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
              mc:Ignorable="d"
              x:Class="FinancesPlay.Paginas.Resposta">
     <FlexLayout Direction="Column" BackgroundColor="#2d425b">
 
         <!-- Barra de status -->
-        <FlexLayout Direction="Column" FlexLayout.Grow="0.2" Margin="10">
+        <FlexLayout Direction="Column" FlexLayout.Grow="0.15" Margin="10">
             <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
+                <Label Text="Nome Aqui" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center"></Label>
+                <sfavatar:SfAvatarView x:Name="sfAvAvatar"
+                                       BackgroundColor="WhiteSmoke"
+                                       ContentType="Custom"
+                                       Grid.Row="0"
+                                       Grid.Column="2"
+                                       Grid.RowSpan="3"
+                                       ImageSource=""
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"   
+                                       HeightRequest="50"
+                                       CornerRadius="25"
+                                       WidthRequest="50" 
+                                       />
                 <Label Text="Dinheiro" TextColor="#cfdde8" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="Body"/>
-                <ProgressBar Progress="0"
+                <ProgressBar
                          x:Name="pbDinheiro"
                          ProgressColor="Gold"
                          Grid.Row="1"
                          Grid.Column="0"/>
                 <Label Text="Humor" TextColor="#cfdde8" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="Body"/>
-                <ProgressBar Progress="0"
+                <ProgressBar
                          x:Name="pbHumor"
                          ProgressColor="BlueViolet"
                          Grid.Row="1"
                          Grid.Column="1"/>
                 <Label Text="Conhecimento Financeiro" TextColor="#cfdde8" Grid.Row="2" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" FontSize="Body"/>
-                <ProgressBar Progress="0"
+                <ProgressBar
                          x:Name="pbConhecimento"
                          ProgressColor="Green"
-                         
                          Grid.Row="3"
                          Grid.ColumnSpan="2"/>
             </Grid>
@@ -44,7 +47,6 @@
 
         <!-- Conteúdo  -->
         <FlexLayout FlexLayout.Grow="1" Direction="Column" BackgroundColor="#242940">
-            <!-- Perguntas -->
             <Label Text=""
                    x:Name="lblDica"
                    Margin="10"

@@ -20,9 +20,17 @@ namespace FinancesPlay.Paginas
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             NavigationPage.SetHasBackButton(this, false);
-            this.Alternativa = Alternativa;
+            sfAvAvatar.ImageSource = Paginas.Pergunta.Avatar.Arquivo;
+            pbDinheiro.Progress = Paginas.Pergunta.dinheiro;
+            pbHumor.Progress = Paginas.Pergunta.humor;
+            pbConhecimento.Progress = Paginas.Pergunta.conhecimento;
 
-            if(Alternativa.Certa){
+            this.Alternativa = Alternativa;
+        }
+        protected override void OnAppearing()
+        {
+            if (Alternativa.Certa)
+            {
                 Sons.dinheiro.Play();
             }
             else
@@ -37,7 +45,7 @@ namespace FinancesPlay.Paginas
             setHumor(Alternativa.Felicidade);
             setConhecimento(Alternativa.Conhecimento);
         }
-        
+
         private void setDinheiro(double valor)
         {
             Pergunta.dinheiro += (valor * 2) / 100;

@@ -21,9 +21,9 @@ namespace FinancesPlay.Paginas
             NavigationPage.SetHasNavigationBar(this, false);
             NavigationPage.SetHasBackButton(this, false);
             sfAvAvatar.ImageSource = Paginas.Pergunta.Avatar.Arquivo;
-            pbDinheiro.Progress = Paginas.Pergunta.dinheiro;
-            pbHumor.Progress = Paginas.Pergunta.humor;
-            pbConhecimento.Progress = Paginas.Pergunta.conhecimento;
+            pbDinheiro.Percentage = (float)Paginas.Pergunta.dinheiro;
+            pbHumor.Percentage = (float)Paginas.Pergunta.humor;
+            pbConhecimento.Percentage = (float)Paginas.Pergunta.conhecimento;
 
             this.Alternativa = Alternativa;
         }
@@ -49,17 +49,17 @@ namespace FinancesPlay.Paginas
         private void setDinheiro(double valor)
         {
             Pergunta.dinheiro += (valor * 2) / 100;
-            pbDinheiro.ProgressTo(Pergunta.dinheiro, 500, Easing.Linear);
+            pbDinheiro.Percentage = (float)Pergunta.dinheiro;
         }
         private void setHumor(double valor)
         {
             Pergunta.humor += (valor * 2) / 100;
-            pbHumor.ProgressTo(Pergunta.humor, 500, Easing.Linear);
+            pbHumor.Percentage = (float)Pergunta.humor;
         }
         private void setConhecimento(double valor)
         {
             Pergunta.conhecimento += (valor * 2) / 100;
-            pbConhecimento.ProgressTo(Pergunta.conhecimento, 500, Easing.Linear);
+            pbConhecimento.Percentage = (float)Pergunta.conhecimento;
         }
         private void btnContinuar_Clicked(object sender, EventArgs e)
         {

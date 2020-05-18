@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
+             xmlns:controls="clr-namespace:XamBooksApp.Controls;assembly=FinancesPlay"
              mc:Ignorable="d"
              x:Class="FinancesPlay.Paginas.Pergunta"
              NavigationPage.HasNavigationBar="false">
@@ -11,52 +12,69 @@
     <FlexLayout Direction="Column" BackgroundColor="#2d425b">
 
         <!-- Barra de status -->
-        <FlexLayout Direction="Column" FlexLayout.Grow="0.15" Margin="10">
+        <FlexLayout Direction="Column" FlexLayout.Grow="0.1" Margin="10">
             <Grid>
-                <Label Text="Nome Aqui" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center"></Label>
-                <sfavatar:SfAvatarView x:Name="sfAvAvatar"
-                                       BackgroundColor="WhiteSmoke"
-                                       ContentType="Custom"
-                                       Grid.Row="0"
-                                       Grid.Column="2"
-                                       Grid.RowSpan="3"
-                                       ImageSource=""
-                                       VerticalOptions="Center"
-                                       HorizontalOptions="Center"   
-                                       HeightRequest="50"
-                                       CornerRadius="25"
-                                       WidthRequest="50" 
-                                       />
-                <Label Text="Dinheiro" TextColor="#cfdde8" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="Body"/>
-                <ProgressBar
-                         x:Name="pbDinheiro"
-                         ProgressColor="Gold"
-                         Grid.Row="1"
-                         Grid.Column="0"/>
-                <Label Text="Humor" TextColor="#cfdde8" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="Body"/>
-                <ProgressBar
-                         x:Name="pbHumor"
-                         ProgressColor="BlueViolet"
-                         Grid.Row="1"
-                         Grid.Column="1"/>
-                <Label Text="Conhecimento Financeiro" TextColor="#cfdde8" Grid.Row="2" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" FontSize="Body"/>
-                <ProgressBar
-                         x:Name="pbConhecimento"
-                         ProgressColor="Green"
-                         Grid.Row="3"
-                         Grid.ColumnSpan="2"/>
+                <Label Text="Nome Aqui" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"></Label>
+                <sfavatar:SfAvatarView 
+                    x:Name="sfAvAvatar"
+                    BackgroundColor="WhiteSmoke"
+                    ContentType="Custom"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Grid.RowSpan="3"
+                    ImageSource=""
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"   
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    WidthRequest="50"/>
+                <controls:ProgressBar
+                    x:Name="pbDinheiro"
+                    Grid.Row="1" Grid.Column="0" 
+                    AlternativeTextColor="#0463E1"
+                    BarBackgroundColor="#bcd8f6"
+                    CornerRadius="6"
+                    FontSize="18"
+                    GradientEndColor="#C8A500"
+                    GradientStartColor="#FFD200"
+                    HeightRequest="30"
+                    TextColor="White"/>
+                <controls:ProgressBar
+                    x:Name="pbHumor"
+                    Grid.Row="1" Grid.Column="1" 
+                    AlternativeTextColor="#0463E1"
+                    BarBackgroundColor="#bcd8f6"
+                    CornerRadius="6"
+                    FontSize="18"
+                    GradientEndColor="#27008F"
+                    GradientStartColor="#3800CF"
+                    HeightRequest="30"
+                    TextColor="White"/>
+                <controls:ProgressBar
+                    x:Name="pbConhecimento"
+                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                    AlternativeTextColor="#0463E1"
+                    BarBackgroundColor="#bcd8f6"
+                    CornerRadius="6"
+                    FontSize="18"
+                    GradientEndColor="#FF3A9300"
+                    GradientStartColor="#54D500"
+                    HeightRequest="30"
+                    TextColor="White"/>
             </Grid>
         </FlexLayout>
 
         <!-- Perguntas -->
         <FlexLayout FlexLayout.Grow="1" 
                     BackgroundColor="#242940" 
-                    HorizontalOptions="Start"
-                    JustifyContent="Center">
-            <Label Text="Lorem ipsum dolor sit amet?"
+                    HorizontalOptions="Center"
+                    AlignContent="Center">
+            <Label Text="Lorem ipsum doaaaaa aaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaaalor sit amet?"
                    x:Name="lblPergunta"
                    Margin="10"
                    FontSize="Large"
+                   LineBreakMode="WordWrap"
+                   HorizontalTextAlignment="Center"
                    TextColor="#cfdde8"/>
         </FlexLayout>
 

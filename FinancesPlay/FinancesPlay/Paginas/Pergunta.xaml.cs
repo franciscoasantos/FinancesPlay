@@ -38,9 +38,9 @@ namespace FinancesPlay.Paginas
         {
             try
             {
-                pbDinheiro.Progress = dinheiro;
-                pbHumor.Progress = humor;
-                pbConhecimento.Progress = conhecimento;
+                pbDinheiro.Percentage = (float)dinheiro;
+                pbHumor.Percentage = (float)humor;
+                pbConhecimento.Percentage = (float)conhecimento;
 
                 var perguntas = (from pergunta in MainPage.lstPergunta.Perguntas
                                  where (pergunta.IdPergunta == idPergunta)

@@ -1,4 +1,5 @@
 ﻿using FinancesPlay.Model.Perguntas;
+using FinancesPlay.Model.Repositorio;
 using FinancesPlay.Model.Sons;
 using Newtonsoft.Json;
 using System;
@@ -12,28 +13,14 @@ namespace FinancesPlay
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        public static ListaPerguntas lstPergunta = LerJson();
+        public static ListaPerguntas lstPergunta;
 
         public MainPage()
         {
             InitializeComponent();
-            Sons.carregarSons();
-        }
-        public static ListaPerguntas LerJson()
-        {
-            string jsonFileName = "dados.json";
-            string nomePasta = "Model.Perguntas";
-            ListaPerguntas PerguntaList = new ListaPerguntas();
-            var assembly = typeof(MainPage).GetTypeInfo().Assembly;
-            Stream stream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{nomePasta}.{jsonFileName}");
-            using (var reader = new System.IO.StreamReader(stream))
-            {
-                var jsonString = reader.ReadToEnd();
 
-                //Convert Objetos JSON para uma lista generica
-                PerguntaList = JsonConvert.DeserializeObject<ListaPerguntas>(jsonString);
-            }
-            return PerguntaList;
+            Sons.carregarSons();
+            lstPergunta = new Repositorio().LerJson();
         }
 
         public void BtComecar_Clicked(object sender, EventArgs e)

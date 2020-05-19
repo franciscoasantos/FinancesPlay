@@ -29,7 +29,7 @@ namespace FinancesPlay.Paginas
             var assembly = typeof(MainPage).GetTypeInfo().Assembly;
             cvAvatar.ItemsSource = avatares;
             //Carregar avatares
-            for (int i = 1; i <= 15; i++)
+            for (int i = 1; i <= 8; i++)
             {
                 avatares.Add(new Avatar
                 {

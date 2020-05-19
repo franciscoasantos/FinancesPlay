@@ -30,6 +30,7 @@
                     WidthRequest="50"/>
                 <controls:ProgressBar
                     x:Name="pbDinheiro"
+                    Text="Dinheiro"
                     Grid.Row="1" Grid.Column="0" 
                     AlternativeTextColor="#0463E1"
                     BarBackgroundColor="#bcd8f6"
@@ -41,6 +42,7 @@
                     TextColor="White"/>
                 <controls:ProgressBar
                     x:Name="pbHumor"
+                    Text="Humor"
                     Grid.Row="1" Grid.Column="1" 
                     AlternativeTextColor="#0463E1"
                     BarBackgroundColor="#bcd8f6"
@@ -52,6 +54,7 @@
                     TextColor="White"/>
                 <controls:ProgressBar
                     x:Name="pbConhecimento"
+                    Text="Conhecimento Financeiro"
                     Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
                     AlternativeTextColor="#0463E1"
                     BarBackgroundColor="#bcd8f6"

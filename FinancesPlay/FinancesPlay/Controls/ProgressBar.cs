@@ -9,6 +9,14 @@ namespace XamBooksApp.Controls
 {
     public class ProgressBar : SKCanvasView
     {
+        public static BindableProperty TextProperty = BindableProperty.Create(nameof(Text), typeof(string),
+            typeof(ProgressBar), null);
+
+        public string Text
+        {
+            get => (string)GetValue(TextProperty);
+            set => SetValue(TextProperty, value);
+        }
         public static BindableProperty PercentageProperty = BindableProperty.Create(nameof(Percentage), typeof(float),
             typeof(ProgressBar), 0f, BindingMode.OneWay,
             validateValue: (_, value) => value != null,
@@ -110,6 +118,8 @@ namespace XamBooksApp.Controls
 
             var percentage = Percentage;
 
+            var texto = Text;
+
             var cornerRadius = CornerRadius * scale;
 
             var textSize = FontSize * scale;
@@ -164,7 +174,7 @@ namespace XamBooksApp.Controls
 
             var yText = info.Height / 2 - textBounds.MidY;
 
-            canvas.DrawText(str, xText, yText, textPaint);
+            canvas.DrawText(texto, xText, yText, textPaint);
         }
     }
 }

@@ -29,7 +29,7 @@
                             <Image Source="{Binding Arquivo}" 
                                        Aspect="AspectFill"
                                        HeightRequest="366"
-                                       WidthRequest="288"
+                                       WidthRequest="300"
                                        HorizontalOptions="Center" />
                         </FlexLayout>
                     </DataTemplate>

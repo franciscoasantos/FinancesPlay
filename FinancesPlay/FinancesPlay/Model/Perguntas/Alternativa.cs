@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FinancesPlay.Desserializar
+namespace FinancesPlay.Model.Perguntas
 {
     public class Alternativa
     {

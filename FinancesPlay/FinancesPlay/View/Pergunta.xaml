@@ -2,9 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms" xmlns:controls="clr-namespace:XamBooksApp.Controls"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
+             xmlns:controls="clr-namespace:FinancesPlay.Controller;assembly=FinancesPlay"
              mc:Ignorable="d"
-             x:Class="FinancesPlay.Paginas.Resposta">
+             x:Class="FinancesPlay.View.Pergunta"
+             NavigationPage.HasNavigationBar="false">
+
     <FlexLayout Direction="Column" BackgroundColor="#2d425b">
 
         <!-- Barra de status -->
@@ -63,32 +67,44 @@
             </Grid>
         </FlexLayout>
 
-        <!-- Conteúdo  -->
-        <FlexLayout FlexLayout.Grow="1" BackgroundColor="#242940">
+        <!-- Perguntas -->
+        <FlexLayout FlexLayout.Grow="1" 
+                    BackgroundColor="#242940" 
+                    HorizontalOptions="Center"
+                    AlignContent="Center">
             <Label Text="Lorem ipsum doaaaaa aaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaaalor sit amet?"
-                   x:Name="lblDica"
+                   x:Name="lblPergunta"
                    Margin="10"
-                   LineBreakMode="WordWrap"
                    FontSize="Large"
-                   TextColor="#cfdde8"
+                   LineBreakMode="WordWrap"
                    HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+                   TextColor="#cfdde8"/>
         </FlexLayout>
 
-<!-- Botão continuar -->
-        <FlexLayout Direction="Row"
+        <!-- Alternativas -->
+        <FlexLayout Direction="Column"
                     FlexLayout.Grow="0.2"
-                    AlignItems="Center"
                     JustifyContent="SpaceEvenly">
-            <Button Text="Continuar"
-                    x:Name="btnContinuar"
-                    Clicked="btnContinuar_Clicked"
+            <Button Text=""
+                    x:Name="btnAlternativaA"
+                    Clicked="btnAlternativaA_Clicked"
                     BackgroundColor="#e6822f"
                     TextColor="White"
                     FontSize="Small"
                     CornerRadius="10"
                     BorderColor="#87593a"
-                    BorderWidth="0.2"/>
+                    BorderWidth="0.2"
+                    Margin="5"/>
+            <Button Text=""
+                    x:Name="btnAlternativaB"
+                    Clicked="btnAlternativaB_Clicked"
+                    BackgroundColor="#e6822f"
+                    TextColor="White"
+                    FontSize="Small"
+                    CornerRadius="10"
+                    BorderColor="#87593a"
+                    BorderWidth="0.2"
+                    Margin="5"/>
         </FlexLayout>
     </FlexLayout>
 </ContentPage>

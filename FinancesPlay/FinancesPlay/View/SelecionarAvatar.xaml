@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="FinancesPlay.Paginas.SelecionarAvatar"
+             x:Class="FinancesPlay.View.SelecionarAvatar"
              NavigationPage.HasNavigationBar="false">
 
     <FlexLayout Direction="Column" BackgroundColor="#2d425b">
@@ -29,7 +29,7 @@
                             <Image Source="{Binding Arquivo}" 
                                        Aspect="AspectFill"
                                        HeightRequest="366"
-                                       WidthRequest="300"
+                                       WidthRequest="288"
                                        HorizontalOptions="Center" />
                         </FlexLayout>
                     </DataTemplate>

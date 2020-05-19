@@ -5,7 +5,7 @@ using SkiaSharp;
 using SkiaSharp.Views.Forms;
 using Xamarin.Forms;
 
-namespace XamBooksApp.Controls
+namespace FinancesPlay.Controller
 {
     public class ProgressBar : SKCanvasView
     {

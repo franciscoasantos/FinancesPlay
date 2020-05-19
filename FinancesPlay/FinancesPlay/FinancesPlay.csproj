@@ -12,34 +12,34 @@
 
   <ItemGroup>
     <None Remove="dados.json" />
-    <None Remove="Imagens\avatar1.png" />
-    <None Remove="Imagens\avatar2.png" />
-    <None Remove="Imagens\avatar3.png" />
-    <None Remove="Imagens\avatar4.png" />
-    <None Remove="Imagens\avatar5.png" />
-    <None Remove="Imagens\avatar6.png" />
-    <None Remove="Imagens\avatar7.png" />
-    <None Remove="Imagens\avatar8.png" />
-    <None Remove="Sons\click.ogg" />
-    <None Remove="Sons\dinheiro.ogg" />
-    <None Remove="Sons\errado.ogg" />
+    <None Remove="Model\Imagens\avatar1.png" />
+    <None Remove="Model\Imagens\avatar2.png" />
+    <None Remove="Model\Imagens\avatar3.png" />
+    <None Remove="Model\Imagens\avatar4.png" />
+    <None Remove="Model\Imagens\avatar5.png" />
+    <None Remove="Model\Imagens\avatar6.png" />
+    <None Remove="Model\Imagens\avatar7.png" />
+    <None Remove="Model\Imagens\avatar8.png" />
+    <None Remove="Model\Sons\click.ogg" />
+    <None Remove="Model\Sons\dinheiro.ogg" />
+    <None Remove="Model\Sons\errado.ogg" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Desserializar\dados.json">
+    <EmbeddedResource Include="Model\Perguntas\dados.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Imagens\avatar1.png" />
-    <EmbeddedResource Include="Imagens\avatar2.png" />
-    <EmbeddedResource Include="Imagens\avatar3.png" />
-    <EmbeddedResource Include="Imagens\avatar4.png" />
-    <EmbeddedResource Include="Imagens\avatar5.png" />
-    <EmbeddedResource Include="Imagens\avatar6.png" />
-    <EmbeddedResource Include="Imagens\avatar7.png" />
-    <EmbeddedResource Include="Imagens\avatar8.png" />
-    <EmbeddedResource Include="Sons\click.ogg" />
-    <EmbeddedResource Include="Sons\dinheiro.ogg" />
-    <EmbeddedResource Include="Sons\errado.ogg" />
+    <EmbeddedResource Include="Model\Imagens\avatar1.png" />
+    <EmbeddedResource Include="Model\Imagens\avatar2.png" />
+    <EmbeddedResource Include="Model\Imagens\avatar3.png" />
+    <EmbeddedResource Include="Model\Imagens\avatar4.png" />
+    <EmbeddedResource Include="Model\Imagens\avatar5.png" />
+    <EmbeddedResource Include="Model\Imagens\avatar6.png" />
+    <EmbeddedResource Include="Model\Imagens\avatar7.png" />
+    <EmbeddedResource Include="Model\Imagens\avatar8.png" />
+    <EmbeddedResource Include="Model\Sons\click.ogg" />
+    <EmbeddedResource Include="Model\Sons\dinheiro.ogg" />
+    <EmbeddedResource Include="Model\Sons\errado.ogg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,19 +55,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Paginas\SelecionarAvatar.xaml.cs">
+    <Compile Update="View\SelecionarAvatar.xaml.cs">
       <DependentUpon>SelecionarAvatar.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Paginas\SelecionarAvatar.xaml">
+    <EmbeddedResource Update="View\SelecionarAvatar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\Pergunta.xaml">
+    <EmbeddedResource Update="View\Pergunta.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\Resposta.xaml">
+    <EmbeddedResource Update="View\Resposta.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

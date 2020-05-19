@@ -6,16 +6,16 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace FinancesPlay
+namespace FinancesPlay.Model.Sons
 {
-    class Sons
+    public class Sons
     {
         public static ISimpleAudioPlayer clique { get; set; }
         public static ISimpleAudioPlayer dinheiro { get; set; }
         public static ISimpleAudioPlayer errado { get; set; }
         public static void carregarSons()
         {
-            string nomePasta = "Sons";
+            string nomePasta = "Model.Sons";
             string soundFileName;
             var assembly = typeof(MainPage).GetTypeInfo().Assembly;
             Stream audioStream;

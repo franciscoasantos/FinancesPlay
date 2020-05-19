@@ -48,14 +48,13 @@ namespace FinancesPlay.View
                 pbConhecimento.Percentage = (float)conhecimento;
 
                 var pergunta = Repositorio.GetPerguntaById(idPergunta);
-
-                this.alternativaA = Repositorio.GetAlternativa(pergunta, "A");
-                this.alternativaB = Repositorio.GetAlternativa(pergunta, "B");
+                
+                alternativaA = Repositorio.GetAlternativa(pergunta, "A");
+                alternativaB = Repositorio.GetAlternativa(pergunta, "B");
 
                 lblPergunta.Text = pergunta.TextoPergunta;
-
-                btnAlternativaA.Text = this.alternativaA.Texto;
-                btnAlternativaB.Text = this.alternativaB.Texto;
+                btnAlternativaA.Text = alternativaA.Texto;
+                btnAlternativaB.Text = alternativaB.Texto;
 
                 idPergunta++;
             }

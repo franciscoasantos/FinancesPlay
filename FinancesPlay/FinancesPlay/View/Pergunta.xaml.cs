@@ -1,5 +1,6 @@
-﻿using FinancesPlay.Desserializar;
-using FinancesPlay.Imagens;
+﻿using FinancesPlay.Model;
+using FinancesPlay.Model.Imagens;
+using FinancesPlay.Model.Perguntas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FinancesPlay.Paginas
+namespace FinancesPlay.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Pergunta : ContentPage
@@ -66,12 +67,12 @@ namespace FinancesPlay.Paginas
 
         private void btnAlternativaA_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Paginas.Resposta(this.alternativaA),false);
+            Navigation.PushAsync(new View.Resposta(this.alternativaA),false);
         }
 
         private void btnAlternativaB_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Paginas.Resposta(this.alternativaB),false);
+            Navigation.PushAsync(new View.Resposta(this.alternativaB),false);
         }
     }
 }

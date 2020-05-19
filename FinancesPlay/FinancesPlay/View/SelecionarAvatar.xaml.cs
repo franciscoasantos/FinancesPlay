@@ -1,4 +1,4 @@
-﻿using FinancesPlay.Imagens;
+﻿using FinancesPlay.Model.Imagens;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FinancesPlay.Paginas
+namespace FinancesPlay.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SelecionarAvatar : ContentPage
@@ -34,13 +34,13 @@ namespace FinancesPlay.Paginas
                 avatares.Add(new Avatar
                 {
                     Nome = "avatar" + i + ".png",
-                    Arquivo = ImageSource.FromResource($"{assembly.GetName().Name}.Imagens." + "avatar" + i + ".png"),
+                    Arquivo = ImageSource.FromResource($"{assembly.GetName().Name}.Model.Imagens.avatar" + i + ".png"),
                 });
             }
         }
         private void btnEscolher_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Paginas.Pergunta((Avatar)cvAvatar.CurrentItem));
+            Navigation.PushAsync(new View.Pergunta((Avatar)cvAvatar.CurrentItem));
         }
     }
 }

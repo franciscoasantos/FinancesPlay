@@ -1,6 +1,7 @@
-﻿using FinancesPlay.Desserializar;
+﻿using FinancesPlay.Model.Perguntas;
+using FinancesPlay.Model.Sons;
 using System;
-using FinancesPlay.Paginas;
+using FinancesPlay.View;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FinancesPlay.Paginas
+namespace FinancesPlay.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Resposta : ContentPage
@@ -20,10 +21,10 @@ namespace FinancesPlay.Paginas
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             NavigationPage.SetHasBackButton(this, false);
-            sfAvAvatar.ImageSource = Paginas.Pergunta.Avatar.Arquivo;
-            pbDinheiro.Percentage = (float)Paginas.Pergunta.dinheiro;
-            pbHumor.Percentage = (float)Paginas.Pergunta.humor;
-            pbConhecimento.Percentage = (float)Paginas.Pergunta.conhecimento;
+            sfAvAvatar.ImageSource = View.Pergunta.Avatar.Arquivo;
+            pbDinheiro.Percentage = (float)View.Pergunta.dinheiro;
+            pbHumor.Percentage = (float)View.Pergunta.humor;
+            pbConhecimento.Percentage = (float)View.Pergunta.conhecimento;
 
             this.Alternativa = Alternativa;
         }

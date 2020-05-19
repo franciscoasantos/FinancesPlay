@@ -1,4 +1,5 @@
-﻿using FinancesPlay.Desserializar;
+﻿using FinancesPlay.Model.Perguntas;
+using FinancesPlay.Model.Sons;
 using Newtonsoft.Json;
 using System;
 using System.ComponentModel;
@@ -21,7 +22,7 @@ namespace FinancesPlay
         public static ListaPerguntas LerJson()
         {
             string jsonFileName = "dados.json";
-            string nomePasta = "Desserializar";
+            string nomePasta = "Model.Perguntas";
             ListaPerguntas PerguntaList = new ListaPerguntas();
             var assembly = typeof(MainPage).GetTypeInfo().Assembly;
             Stream stream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{nomePasta}.{jsonFileName}");
@@ -39,7 +40,7 @@ namespace FinancesPlay
         {
             Sons.clique.Play();
 
-            Navigation.PushAsync(new Paginas.SelecionarAvatar());
+            Navigation.PushAsync(new View.SelecionarAvatar());
         }
     }
 }

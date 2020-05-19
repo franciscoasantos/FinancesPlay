@@ -166,11 +166,11 @@ namespace XamBooksApp.Controls
             textPaint.MeasureText(str, ref textBounds);
 
             var xText = percentageWidth / 2 - textBounds.MidX;
-            if (xText < 0)
-            {
-                xText = info.Width / 2 - textBounds.MidX;
-                textPaint.Color = AlternativeTextColor.ToSKColor();
-            }
+            //if (xText < 0)
+            //{
+            //    xText = info.Width / 2 - textBounds.MidX;
+            //    textPaint.Color = AlternativeTextColor.ToSKColor();
+            //}
 
             var yText = info.Height / 2 - textBounds.MidY;
 

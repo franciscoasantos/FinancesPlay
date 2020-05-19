@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 
@@ -27,5 +28,15 @@ namespace FinancesPlay.Model.Repositorio
             return PerguntaList;
         }
 
+        public Pergunta GetPerguntaById(int idPergunta)
+        {
+            return (from pergunta in MainPage.lstPergunta.Perguntas
+                             where (pergunta.IdPergunta == idPergunta)
+                             select pergunta).First();
+        }
+        public Alternativa GetAlternativa(Pergunta pergunta, string alternativa)
+        {
+            return pergunta.Alternativas.First(alt => alt.IdAlternativa.Equals(alternativa));
+        }
     }
 }

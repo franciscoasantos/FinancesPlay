@@ -1,6 +1,7 @@
 ﻿using FinancesPlay.Model;
 using FinancesPlay.Model.Imagens;
 using FinancesPlay.Model.Perguntas;
+using FinancesPlay.Model.Repositorio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace FinancesPlay.View
         public static double humor { get; set; }
         public static double conhecimento { get; set; }
         public static Avatar Avatar;
+        public Repositorio Repositorio;
 
         public int idPergunta = 1;
         public Pergunta(Avatar avatar)
@@ -33,31 +35,31 @@ namespace FinancesPlay.View
             dinheiro = 0.5;
             humor = 0.5;
             conhecimento = 0;
+            Repositorio = new Repositorio();
             
         }
         protected override void OnAppearing()
         {
+            
             try
             {
                 pbDinheiro.Percentage = (float)dinheiro;
                 pbHumor.Percentage = (float)humor;
                 pbConhecimento.Percentage = (float)conhecimento;
 
-                var perguntas = (from pergunta in MainPage.lstPergunta.Perguntas
-                                 where (pergunta.IdPergunta == idPergunta)
-                                 select pergunta).First();
+                var pergunta = Repositorio.GetPerguntaById(idPergunta);
 
-                this.alternativaA = perguntas.Alternativas.First(alt => alt.IdAlternativa.Equals("A"));
-                this.alternativaB = perguntas.Alternativas.First(alt => alt.IdAlternativa.Equals("B"));
+                this.alternativaA = Repositorio.GetAlternativa(pergunta, "A");
+                this.alternativaB = Repositorio.GetAlternativa(pergunta, "B");
 
-                lblPergunta.Text = perguntas.TextoPergunta;
+                lblPergunta.Text = pergunta.TextoPergunta;
 
                 btnAlternativaA.Text = this.alternativaA.Texto;
                 btnAlternativaB.Text = this.alternativaB.Texto;
 
                 idPergunta++;
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 lblPergunta.Text = "Fim do jogo!";
                 btnAlternativaA.IsVisible = false;

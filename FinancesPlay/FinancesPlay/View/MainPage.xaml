@@ -9,11 +9,11 @@
              NavigationPage.HasNavigationBar="false">
 
     <StackLayout>
-        <Label Text="Finances Play" 
+        <Image Source=""
+               x:Name="imgLogo"
+               Aspect="AspectFill"
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand"
-           FontSize="40"
-           TextColor="#cfdde8"/>
+           VerticalOptions="CenterAndExpand"/>
         <Button Text="Começar"
                 x:Name="BtComecar"
                 Clicked="BtComecar_Clicked"

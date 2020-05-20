@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,10 +20,10 @@ namespace FinancesPlay.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             NavigationPage.SetHasBackButton(this, false);
-            sfAvAvatar.ImageSource = View.Pergunta.Avatar.Arquivo;
-            pbDinheiro.Percentage = (float)View.Pergunta.dinheiro;
-            pbHumor.Percentage = (float)View.Pergunta.humor;
-            pbConhecimento.Percentage = (float)View.Pergunta.conhecimento;
+            sfAvAvatar.ImageSource = MainPage.Avatar.Arquivo;
+            pbDinheiro.Percentage = (float)MainPage.dinheiro;
+            pbHumor.Percentage = (float)MainPage.humor;
+            pbConhecimento.Percentage = (float)MainPage.conhecimento;
 
             this.Alternativa = Alternativa;
         }
@@ -49,18 +48,18 @@ namespace FinancesPlay.View
 
         private void setDinheiro(double valor)
         {
-            Pergunta.dinheiro += (valor * 2) / 100;
-            pbDinheiro.Percentage = (float)Pergunta.dinheiro;
+            MainPage.dinheiro += (valor * 2) / 100;
+            pbDinheiro.Percentage = (float)MainPage.dinheiro;
         }
         private void setHumor(double valor)
         {
-            Pergunta.humor += (valor * 2) / 100;
-            pbHumor.Percentage = (float)Pergunta.humor;
+            MainPage.humor += (valor * 2) / 100;
+            pbHumor.Percentage = (float)MainPage.humor;
         }
         private void setConhecimento(double valor)
         {
-            Pergunta.conhecimento += (valor * 2) / 100;
-            pbConhecimento.Percentage = (float)Pergunta.conhecimento;
+            MainPage.conhecimento += (valor * 2) / 100;
+            pbConhecimento.Percentage = (float)MainPage.conhecimento;
         }
         private void btnContinuar_Clicked(object sender, EventArgs e)
         {

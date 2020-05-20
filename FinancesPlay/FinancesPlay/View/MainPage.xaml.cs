@@ -1,4 +1,5 @@
-﻿using FinancesPlay.Model.Perguntas;
+﻿using FinancesPlay.Model.Imagens;
+using FinancesPlay.Model.Perguntas;
 using FinancesPlay.Model.Repositorio;
 using FinancesPlay.Model.Sons;
 using Newtonsoft.Json;
@@ -13,7 +14,12 @@ namespace FinancesPlay
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        public static Avatar Avatar;
         public static ListaPerguntas lstPergunta;
+
+        public static double dinheiro { get; set; }
+        public static double humor { get; set; }
+        public static double conhecimento { get; set; }
 
         public MainPage()
         {

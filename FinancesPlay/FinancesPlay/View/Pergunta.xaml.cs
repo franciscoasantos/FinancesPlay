@@ -19,10 +19,7 @@ namespace FinancesPlay.View
     {
         public Alternativa alternativaA { get; set; }
         public Alternativa alternativaB { get; set; }
-        public static double dinheiro { get; set; }
-        public static double humor { get; set; }
-        public static double conhecimento { get; set; }
-        public static Avatar Avatar;
+
         public Repositorio Repositorio;
 
         public int idPergunta = 1;
@@ -30,25 +27,26 @@ namespace FinancesPlay.View
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            Avatar = avatar;
             sfAvAvatar.ImageSource = avatar.Arquivo;
-            dinheiro = 0.5;
-            humor = 0.5;
-            conhecimento = 0;
-            Repositorio = new Repositorio();
             
+            MainPage.Avatar = avatar;
+            MainPage.dinheiro = 0.5;
+            MainPage.humor = 0.5;
+            MainPage.conhecimento = 0;
+            
+            Repositorio = new Repositorio();
         }
         protected override void OnAppearing()
         {
             
             try
             {
-                pbDinheiro.Percentage = (float)dinheiro;
-                pbHumor.Percentage = (float)humor;
-                pbConhecimento.Percentage = (float)conhecimento;
+                pbDinheiro.Percentage = (float)MainPage.dinheiro;
+                pbHumor.Percentage = (float)MainPage.humor;
+                pbConhecimento.Percentage = (float)MainPage.conhecimento;
 
                 var pergunta = Repositorio.GetPerguntaById(idPergunta);
-                
+
                 alternativaA = Repositorio.GetAlternativa(pergunta, "A");
                 alternativaB = Repositorio.GetAlternativa(pergunta, "B");
 

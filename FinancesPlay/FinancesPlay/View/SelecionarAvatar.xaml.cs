@@ -1,4 +1,5 @@
 ﻿using FinancesPlay.Model.Imagens;
+using FinancesPlay.Model.Sons;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -40,6 +41,7 @@ namespace FinancesPlay.View
         }
         private void btnEscolher_Clicked(object sender, EventArgs e)
         {
+            Sons.clique.Play();
             Navigation.PushAsync(new View.Pergunta((Avatar)cvAvatar.CurrentItem));
         }
     }

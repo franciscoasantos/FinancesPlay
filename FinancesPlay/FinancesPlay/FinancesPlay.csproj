@@ -20,12 +20,14 @@
     <None Remove="Model\Imagens\avatar6.png" />
     <None Remove="Model\Imagens\avatar7.png" />
     <None Remove="Model\Imagens\avatar8.png" />
+    <None Remove="Model\Imagens\logo.png" />
     <None Remove="Model\Sons\click.ogg" />
     <None Remove="Model\Sons\dinheiro.ogg" />
     <None Remove="Model\Sons\errado.ogg" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Model\Imagens\logo.png" />
     <EmbeddedResource Include="Model\Perguntas\dados.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>

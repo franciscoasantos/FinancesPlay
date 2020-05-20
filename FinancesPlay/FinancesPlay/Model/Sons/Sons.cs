@@ -1,10 +1,6 @@
 ﻿using Plugin.SimpleAudioPlayer;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Text;
 
 namespace FinancesPlay.Model.Sons
 {

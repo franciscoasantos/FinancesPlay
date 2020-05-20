@@ -1,11 +1,6 @@
 ﻿using FinancesPlay.Model.Perguntas;
 using FinancesPlay.Model.Sons;
 using System;
-using FinancesPlay.View;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

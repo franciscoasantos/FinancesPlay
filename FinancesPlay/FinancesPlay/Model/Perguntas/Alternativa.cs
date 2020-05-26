@@ -9,7 +9,6 @@ namespace FinancesPlay.Model.Perguntas
         public string IdAlternativa { get; set; }
         public string Texto { get; set; }
         public string Dica { get; set; }
-        public string Explicacao { get; set; }
         public int Dinheiro { get; set; }
         public int Felicidade { get; set; }
         public int Conhecimento { get; set; }

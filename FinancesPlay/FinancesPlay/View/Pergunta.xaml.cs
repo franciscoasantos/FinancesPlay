@@ -22,6 +22,7 @@ namespace FinancesPlay.View
         public static double humor { get; set; }
         public static double conhecimento { get; set; }
         public static Avatar Avatar;
+        private Model.Perguntas.Pergunta perguntas;
 
         public int idPergunta = 1;
         public Pergunta(Avatar avatar)
@@ -43,7 +44,12 @@ namespace FinancesPlay.View
                 pbHumor.Percentage = (float)humor;
                 pbConhecimento.Percentage = (float)conhecimento;
 
-                var perguntas = (from pergunta in MainPage.lstPergunta.Perguntas
+                if (perguntas != null && !String.IsNullOrEmpty(perguntas.Explicacao))
+                {
+                    DisplayAlert("Para conhecimento!", perguntas.Explicacao, "Entendi");
+                }
+
+                perguntas = (from pergunta in MainPage.lstPergunta.Perguntas
                                  where (pergunta.IdPergunta == idPergunta)
                                  select pergunta).First();
 

@@ -3,6 +3,7 @@
     {
       "IdPergunta": 1,
       "TextoPergunta": "Quanto de dinheiro você poupa por mês?",
+      "Explicacao": "O empréstimo pessoal pode ser encontrado em taxa mínima de 2% ao mês, o que corresponde a 24% ao ano, estes percentuais podem ficar muito mais altos dependendo da Instituição Financeira escolhida.",
       "Alternativas": [
         {
           "IdAlternativa": "A",
@@ -17,7 +18,6 @@
           "IdAlternativa": "B",
           "Texto": "Não consigo poupar",
           "Dica": "Pense nisso, se planeje para cortar gastos. Caso ocorra alguma emergência, será necessário pegar um empréstimo, o que não é indicado.",
-          "Explicacao": "O empréstimo pessoal pode ser encontrado em taxa mínima de 2% ao mês, o que corresponde a 24% ao ano, estes percentuais podem ficar muito mais altos dependendo da Instituição Financeira escolhida.",
           "Dinheiro": -2,
           "Felicidade": -1,
           "Conhecimento": 0
@@ -27,6 +27,7 @@
     {
       "IdPergunta": 2,
       "TextoPergunta": "Se você começar a poupar. Em qual produto pensa em investir?",
+      "Explicacao": "Produtos de baixo risco que rendem mais que a poupança: Tesouro Selic, CDB, LCI, LCA",
       "Alternativas": [
         {
           "IdAlternativa": "A",
@@ -40,7 +41,6 @@
           "IdAlternativa": "B",
           "Texto": "Irei procurar o Gerente da minha conta corrente",
           "Dica": "Excelente! Os bancos oferecem esse serviço gratuitamente e os gerentes de contas são capacitados para orientar o cliente no produto que possui maior rentabilidade, de acordo com o seu perfil.",
-          "Explicacao": "Produtos de baixo risco que rendem mais que a poupança: Tesouro Selic, CDB, LCI, LCA",
           "Certa": true,
           "Dinheiro": 3,
           "Felicidade": 2,
@@ -51,6 +51,7 @@
     {
       "IdPergunta": 3,
       "TextoPergunta": "Como é feito o pagamento da sua fatura de cartão de crédito?",
+      "Explicacao": "A Taxa de parcelamento da fatura do cartão de crédito pode variar de 2,5% a 8% ao mês, o que pode gerar o efeito “bola de neve” para os próximos meses.",
       "Alternativas": [
         {
           "IdAlternativa": "A",
@@ -65,7 +66,6 @@
           "IdAlternativa": "B",
           "Texto": "Sempre parcelo a fatura",
           "Dica": "O que você pensa ser uma folguinha no orçamento, nada mais é do que formas de você se endividar ainda mais.",
-          "Explicacao": "A Taxa de parcelamento da fatura do cartão de crédito pode variar de 2,5% a 8% ao mês, o que pode gerar o efeito “bola de neve” para os próximos meses.",
           "Dinheiro": -3,
           "Felicidade": -2,
           "Conhecimento": -3
@@ -75,6 +75,7 @@
     {
       "IdPergunta": 4,
       "TextoPergunta": "Caso você seja desligado da empresa e receba um acerto de aproximadamente R$ 20.000,00. Você compraria um carro?",
+      "Explicacao": "Financiamentos devem ser muito bem avaliados. Suponhamos que um Banco pratica a taxa de 1% ao mês. Se o valor do automóvel é R$40.000,00, e será pago em 60 meses, a sua parcela será de R$1.066,00 sendo que R$400,00 correspondem apenas aos juros.\nAutomóveis perdem de 20% a 30% do seu valor de compra (taxa de depreciação) no período de dois anos.",
       "Alternativas": [
         {
           "IdAlternativa": "A",
@@ -89,36 +90,11 @@
           "IdAlternativa": "B",
           "Texto": "Sim, daria todo o valor de entrada",
           "Dica": "Pense bem. Um carro não é considerado investimento. Além de não ter os 20.000 disponíveis, ainda irá adquirir parcelas de financiamento. Essa decisão cabe mesmo no seu orçamento?",
-          "Explicacao": "Financiamentos devem ser muito bem avaliados. Suponhamos que um Banco pratica a taxa de 1% ao mês. Se o valor do automóvel é R$40.000,00, e será pago em 60 meses, a sua parcela será de R$1.066,00 sendo que R$400,00 correspondem apenas aos juros.\nAutomóveis perdem de 20% a 30% do seu valor de compra (taxa de depreciação) no período de dois anos.",
           "Dinheiro": -3,
           "Felicidade": 3,
           "Conhecimento": -2
         }
       ]
     },
-    {
-      "IdPergunta": 5,
-      "TextoPergunta": "Você tem costume de atrasar contas?",
-      "Alternativas": [
-        {
-          "IdAlternativa": "A",
-          "Texto": "Não. Pago tudo em dia",
-          "Dica": "Parabéns, pagar as contas no dia, evita sujar seu nome.",
-          "Certa": true,
-          "Dinheiro": 3,
-          "Felicidade": 3,
-          "Conhecimento": 3
-        },
-        {
-          "IdAlternativa": "B",
-          "Texto": "Sim, as vezes eu atraso alguns pagamentos",
-          "Dica": "Pode sujar seu nome",
-          "Explicacao": null,
-          "Dinheiro": -3,
-          "Felicidade": -3,
-          "Conhecimento": -3
-        }
-      ]
-    }
   ]
 }

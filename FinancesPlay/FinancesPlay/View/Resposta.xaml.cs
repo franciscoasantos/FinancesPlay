@@ -58,10 +58,6 @@ namespace FinancesPlay.View
         }
         private void btnContinuar_Clicked(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(Alternativa.Explicacao))
-            {
-                DisplayAlert("É bom saber!", Alternativa.Explicacao, "Entendi");
-            }
             Sons.clique.Play();
             Application.Current.MainPage.Navigation.PopAsync(false);
         }

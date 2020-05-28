@@ -689,7 +689,212 @@
           "Conhecimento": 0
         }
       ]
-      //Fim Henrique
+    },
+    //Fim Henrique
+
+    {
+      "IdPergunta": 25,
+      "TextoPergunta": "Você costuma ir ao supermercado sem saber o que vai comprar? Ou leva contigo uma lista de compras? ",
+      "Explicacao": "",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Eu vou ao supermercado e descubro na hora o que preciso levar.",
+          "Dica": "É recomendado que a gente saiba exatamente o que comprar. Quando não sabemos, na maioria das vezes, compramos por impulso coisas desnecessárias. Não entre em supermercado sem saber o que comprar!",
+          "Dinheiro": -3,
+          "Humor": 2,
+          "Conhecimento": 0
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Sim. Sempre levo comigo uma lista de compras.",
+          "Dica": "Excelente, quando sabemos o que comprar evitamos gastos desnecessários. ",
+          "Certa": true,
+          "Dinheiro": 3,
+          "Felicidade": 1,
+          "Conhecimento": 3
+        }
+      ]
+    },
+
+
+    {
+      "IdPergunta": 26,
+      "TextoPergunta": "Quando sobra algum dinheiro o que você faz? ",
+      "Explicacao": " ",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Guardo no cofre. ",
+          "Dica": " Não seria melhor guardar o seu dinheiro em algo que lhe renda juros?",
+          "Dinheiro": 1,
+          "Humor": 1,
+          "Conhecimento": 1
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Não sobra dinheiro nunca.",
+          "Dica": "Comece a buscar e tentar entender o motivo de não sobrar dinheiro. ",
+          "Dinheiro": -2,
+          "Felicidade": -2,
+          "Conhecimento": 0
+        },
+        {
+          "IdAlternativa": "C",
+          "Texto": "Invisto o que sobrou em algo que me gere algum lucro. ",
+          "Dica": "Parabéns! Investir nem que seja um pouco todo mês te deixa mais próximo da sua liberdade financeira!!!",
+          "Certa": true,
+          "Dinheiro": 3,
+          "Felicidade": 3,
+          "Conhecimento": 3
+        }
+      ]
+    },
+
+    {
+      "IdPergunta": 27,
+      "TextoPergunta": "Você faz o seu controle de receitas/despesas? Como? ",
+      "Explicacao": " ",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Não. Vou gastando sem nenhum tipo de controle. ",
+          "Dica": " Cuidado! Não ter esse controle te joga facilmente para as dívidas e quando você perceber será tarde demais.",
+          "Dinheiro": -1,
+          "Humor": 0,
+          "Conhecimento": -2
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Sim. Anoto todas as despesas e receitas! ",
+          "Dica": "Muito bom! Assim você consegue se controlar melhor. ",
+          "Certa": true,
+          "Dinheiro": 3,
+          "Felicidade": 2,
+          "Conhecimento": 3
+        },
+
+        {
+          "IdAlternativa": "C",
+          "Texto": "Anoto somente os gastos principais como despesas fixas e receitas recorrentes.",
+          "Dica": "Legal!",
+          "Dinheiro": 2,
+          "Felicidade": 2,
+          "Conhecimento": 2
+        }
+      ]
+    },
+
+    {
+      "IdPergunta": 28,
+      "TextoPergunta": "Você faz planos para o futuro? ",
+      "Explicacao": " ",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Sim. E já começo a guardar dinheiro antes",
+          "Dica": "Legal, se programar é a melhor forma de concluir os seus objetivos e ainda sem gastar mais do que deve ",
+          "Certa": true,
+          "Dinheiro": 3,
+          "Humor": 3,
+          "Conhecimento": 3
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Não.",
+          "Dica": "Quando nos planejamos fica muito mais fácil concluir determinado objetivo, pense nisso...",
+          "Dinheiro": -1,
+          "Felicidade": -1,
+          "Conhecimento": 0
+        }
+      ]
+    },
+
+    {
+      "IdPergunta": 29,
+      "TextoPergunta": "Você possui mais de uma fonte de renda? ",
+      "Explicacao": "Cada lugar que te proporciona alguma receita, mesmo que pequena pode ser considerado uma fonte de renda. (investimentos rentáveis são consdierados)",
+      "Alternativas": [
+
+        {
+          "IdAlternativa": "A",
+          "Texto": "Não, possuo somente uma fonte que é a do meu emprego.",
+          "Dica": "Depender de uma única fonte de renda não é uma boa ideia, pois você pode facilmente perdê-la. ",
+          "Dinheiro": 0,
+          "Felicidade": -1,
+          "Conhecimento": -1
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Sim, tenho mais de uma fonte de renda.",
+          "Dica": "Excelente, dessa forma você estará livre para seguir em frente caso haja algum tipo de imprevisto, além de multiplicar o seu dinheiro! ",
+          "Certa": true,
+          "Dinheiro": 3,
+          "Humor": 3,
+          "Conhecimento": 3
+        },
+        {
+          "IdAlternativa": "C",
+          "Texto": "Não possuo nenhuma fonte de renda.",
+          "Dica": "Busque formas de ganhar dinheiro para assim conquistar os seus objetivos e a tão sonhada independência financeira. ",
+          "Dinheiro": -3,
+          "Felicidade": -3,
+          "Conhecimento": -3
+        }
+      ]
+    },
+
+    {
+      "IdPergunta": 30,
+      "TextoPergunta": "Acha que a educação financeira é um pilar importante? ",
+      "Explicacao": " Segundo o SPC, 40,2% da população brasileira é inadimplente. ",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Claro. ",
+          "Dica": "A educação financeira ajuda a entender como poupar dinheiro e acima disso, ensina a economizar",
+          "Certa": true,
+          "Dinheiro": 2,
+          "Humor": 2,
+          "Conhecimento": 2
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Não acho. ",
+          "Dica": "",
+          "Dinheiro": -1,
+          "Felicidade": 0,
+          "Conhecimento": -2
+        }
+      ]
+    },
+
+
+    {
+      "IdPergunta": 31,
+      "TextoPergunta": "Você tem uma reserva de emergência? ",
+      "Explicacao": "É um dinheiro que você poupa para algum tipo de imprevisto.",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Sim. ",
+          "Dica": " Muito bom, dessa forma você não passará aperto caso haja alguma emergência. ",
+          "Dinheiro": 2,
+          "Certa": true,
+          "Humor": 1,
+          "Conhecimento": 2
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Não. ",
+          "Dica": " Recomendamos que você pense nisso, pois o seu futuro está em jogo. ",
+          "Dinheiro": -1,
+          "Humor": 0,
+          "Conhecimento": 0
+        }
+      ]
     }
+    //Tiago
+
   ]
 }

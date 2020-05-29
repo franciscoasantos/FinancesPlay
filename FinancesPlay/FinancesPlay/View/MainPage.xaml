@@ -3,28 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms" 
              mc:Ignorable="d"
              x:Class="FinancesPlay.MainPage"
-             BackgroundColor="#242a41"
              NavigationPage.HasNavigationBar="false">
+    
+    <Grid>
+        <gradient:SfGradientView>
+            <gradient:SfGradientView.BackgroundBrush>
+                <gradient:SfLinearGradientBrush>
+                    <gradient:SfLinearGradientBrush.GradientStops>
+                        <gradient:SfGradientStop Color="#242B5C" Offset="0.0" />
+                        <gradient:SfGradientStop Color="#77B6DC" Offset="1.0" />
+                    </gradient:SfLinearGradientBrush.GradientStops>
+                </gradient:SfLinearGradientBrush>
+            </gradient:SfGradientView.BackgroundBrush>
+        </gradient:SfGradientView>
 
-    <StackLayout>
         <Image Source=""
                x:Name="imgLogo"
                Aspect="AspectFill"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand"/>
+
         <Button Text="Começar"
                 x:Name="BtComecar"
                 Clicked="BtComecar_Clicked"
-                    BackgroundColor="#e6822f"
-                    TextColor="White"
-                    FontSize="Small"
-                    CornerRadius="10"
-                    BorderColor="#87593a"
-                    BorderWidth="0.2"
-                    HorizontalOptions="Center"
-                    Margin="50"/>
-    </StackLayout>
+                Style="{StaticResource botaoComecarContinuar}"/>
 
+    </Grid>
 </ContentPage>

@@ -2,93 +2,79 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms" xmlns:controls="clr-namespace:FinancesPlay.Controller"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms" xmlns:controls="clr-namespace:FinancesPlay.Controller" xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
              mc:Ignorable="d"
              x:Class="FinancesPlay.View.Resposta">
-    <FlexLayout Direction="Column" BackgroundColor="#2d425b">
+    <Grid>
+        <gradient:SfGradientView>
+            <gradient:SfGradientView.BackgroundBrush>
+                <gradient:SfLinearGradientBrush>
+                    <gradient:SfLinearGradientBrush.GradientStops>
+                        <gradient:SfGradientStop Color="#242B5C" Offset="0.0" />
+                        <gradient:SfGradientStop Color="#77B6DC" Offset="1.0" />
+                    </gradient:SfLinearGradientBrush.GradientStops>
+                </gradient:SfLinearGradientBrush>
+            </gradient:SfGradientView.BackgroundBrush>
+        </gradient:SfGradientView>
 
-        <!-- Barra de status -->
-        <FlexLayout Direction="Column" FlexLayout.Grow="0.1" Margin="10">
-            <Grid>
-                <Label Text="Nome Aqui" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"></Label>
-                <sfavatar:SfAvatarView 
+        <FlexLayout Direction="Column" >
+
+            <!-- Barra de status -->
+            <FlexLayout Direction="Column" FlexLayout.Grow="0.15" Margin="10">
+                <Grid>
+                    <Label Text="Gabriel Capila" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center" FontSize="20"></Label>
+                    <sfavatar:SfAvatarView 
                     x:Name="sfAvAvatar"
                     BackgroundColor="WhiteSmoke"
                     ContentType="Custom"
                     Grid.Row="0"
-                    Grid.Column="2"
-                    Grid.RowSpan="3"
-                    ImageSource=""
-                    VerticalOptions="Center"
+                    Grid.Column="2" Grid.RowSpan="3" 
+                    VerticalOptions="Start"
                     HorizontalOptions="Center"   
-                    HeightRequest="50"
-                    CornerRadius="25"
-                    WidthRequest="50"/>
-                <controls:ProgressBar
+                    HeightRequest="54"
+                    CornerRadius="20"
+                    WidthRequest="54"/>
+                    <controls:ProgressBar
                     x:Name="pbDinheiro"
-                    Text="Dinheiro"
-                    Grid.Row="1" Grid.Column="0" 
-                    AlternativeTextColor="#0463E1"
-                    BarBackgroundColor="#bcd8f6"
-                    CornerRadius="6"
-                    FontSize="18"
-                    GradientEndColor="#C8A500"
-                    GradientStartColor="#FFD200"
-                    HeightRequest="30"
-                    TextColor="White"/>
-                <controls:ProgressBar
+                    Text="$$$"
+                    Grid.Row="0" Grid.Column="0" 
+                    Style="{StaticResource barraProgresso}"/>
+                    <controls:ProgressBar
                     x:Name="pbHumor"
                     Text="Humor"
-                    Grid.Row="1" Grid.Column="1" 
-                    AlternativeTextColor="#0463E1"
-                    BarBackgroundColor="#bcd8f6"
-                    CornerRadius="6"
-                    FontSize="18"
-                    GradientEndColor="#27008F"
-                    GradientStartColor="#3800CF"
-                    HeightRequest="30"
-                    TextColor="White"/>
-                <controls:ProgressBar
+                    Grid.Row="1" Grid.Column="0"
+                    Style="{StaticResource barraProgresso}"/>
+                    <controls:ProgressBar
                     x:Name="pbConhecimento"
-                    Text="Conhecimento Financeiro"
-                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
-                    AlternativeTextColor="#0463E1"
-                    BarBackgroundColor="#bcd8f6"
-                    CornerRadius="6"
-                    FontSize="18"
-                    GradientEndColor="#FF3A9300"
-                    GradientStartColor="#54D500"
-                    HeightRequest="30"
-                    TextColor="White"/>
-            </Grid>
-        </FlexLayout>
+                    Text="Conhecimento"
+                    Grid.Row="2" Grid.Column="0"
+                    Style="{StaticResource barraProgresso}"/>
+                </Grid>
+            </FlexLayout>
 
-        <!-- Conteúdo  -->
-        <FlexLayout FlexLayout.Grow="1" BackgroundColor="#242940">
-            <Label Text="Lorem ipsum doaaaaa aaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaaalor sit amet?"
+            <!-- Conteúdo  -->
+            <FlexLayout FlexLayout.Grow="1">
+                <Label Text="Lorem ipsum doaaaaa aaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaaalor sit amet?"
                    x:Name="lblDica"
-                   Margin="10"
+                   Margin="20"
                    LineBreakMode="WordWrap"
-                   FontSize="Large"
+                   FontSize="30"
                    TextColor="#cfdde8"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"/>
-        </FlexLayout>
+            </FlexLayout>
 
-<!-- Botão continuar -->
-        <FlexLayout Direction="Row"
+            <!-- Botão continuar -->
+            <FlexLayout Direction="Row"
                     FlexLayout.Grow="0.2"
                     AlignItems="Center"
                     JustifyContent="SpaceEvenly">
-            <Button Text="Continuar"
+                <Button Text="Continuar"
                     x:Name="btnContinuar"
                     Clicked="btnContinuar_Clicked"
-                    BackgroundColor="#e6822f"
-                    TextColor="White"
-                    FontSize="Small"
-                    CornerRadius="10"
-                    BorderColor="#87593a"
-                    BorderWidth="0.2"/>
+                    Style="{StaticResource botaoComecarContinuar}"/>
+
+            </FlexLayout>
         </FlexLayout>
-    </FlexLayout>
+    </Grid>
 </ContentPage>

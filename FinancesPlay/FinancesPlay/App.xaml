@@ -3,9 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:FinancesPlay.Controller;assembly=FinancesPlay"
+             xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             
              mc:Ignorable="d"
              x:Class="FinancesPlay.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style x:Key="botaoComecarContinuar" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#70A288"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="CharacterSpacing" Value="3"/>
+                <Setter Property="CornerRadius" Value="15"/>
+                <Setter Property="BorderColor" Value="#486b58"/>
+                <Setter Property="BorderWidth" Value="0.5"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="End"/>
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="WidthRequest" Value="500"/>
+                <Setter Property="Margin" Value="50"/>
+            </Style>
+            <Style x:Key="alternativa" TargetType="button:SfButton">
+                <Setter Property="BackgroundColor" Value = "#e6822f"/>
+                <Setter Property="CornerRadius" Value = "20"/>
+                <Setter Property="FontSize" Value = "Small"/>
+                <Setter Property="Margin" Value = "5"/>
+                <Setter Property="BorderColor" Value="#486b58"/>
+                <Setter Property="BorderWidth" Value="0.5"/>
+                <Setter Property="Margin" Value = "5"/>
+                <Setter Property="HeightRequest" Value = "45"/>
+            </Style>
+            <Style x:Key="barraProgresso" TargetType="controls:ProgressBar">
+                <Setter Property="Grid.ColumnSpan" Value ="2"/>
+                <Setter Property="AlternativeTextColor" Value ="#0463E1"/>
+                <Setter Property="BarBackgroundColor" Value ="#bcd8f6"/>
+                <Setter Property="CornerRadius" Value ="6"/>
+                <Setter Property="FontSize" Value ="18"/>
+                <Setter Property="GradientEndColor" Value ="#FF3A9300"/>
+                <Setter Property="GradientStartColor" Value ="#54D500"/>
+                <Setter Property="HeightRequest" Value ="30"/>
+                <Setter Property="TextColor" Value ="Black"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

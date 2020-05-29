@@ -18,6 +18,7 @@ namespace FinancesPlay.View
     {
         public Alternativa alternativaA { get; set; }
         public Alternativa alternativaB { get; set; }
+        public Alternativa alternativaC { get; set; }
         public static double dinheiro { get; set; }
         public static double humor { get; set; }
         public static double conhecimento { get; set; }
@@ -55,11 +56,13 @@ namespace FinancesPlay.View
 
                 this.alternativaA = perguntas.Alternativas.First(alt => alt.IdAlternativa.Equals("A"));
                 this.alternativaB = perguntas.Alternativas.First(alt => alt.IdAlternativa.Equals("B"));
+                this.alternativaC = perguntas.Alternativas.First(alt => alt.IdAlternativa.Equals("C"));
 
                 lblPergunta.Text = perguntas.TextoPergunta;
 
                 btnAlternativaA.Text = this.alternativaA.Texto;
                 btnAlternativaB.Text = this.alternativaB.Texto;
+                btnAlternativaC.Text = this.alternativaC.Texto;
 
                 idPergunta++;
             }
@@ -79,6 +82,11 @@ namespace FinancesPlay.View
         private void btnAlternativaB_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new View.Resposta(this.alternativaB),false);
+        }
+
+        private void btnAlternativaC_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.Resposta(this.alternativaC), false);
         }
     }
 }

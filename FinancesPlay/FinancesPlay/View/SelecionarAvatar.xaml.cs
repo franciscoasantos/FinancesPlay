@@ -36,7 +36,8 @@ namespace FinancesPlay.View
         private void btnEscolher_Clicked(object sender, EventArgs e)
         {
             Sons.clique.Play();
-            Navigation.PushAsync(new View.Pergunta((Avatar)cvAvatar.CurrentItem));
+            MainPage.Avatar = (Avatar)cvAvatar.CurrentItem;
+            Navigation.PushAsync(new View.Pergunta());
         }
     }
 }

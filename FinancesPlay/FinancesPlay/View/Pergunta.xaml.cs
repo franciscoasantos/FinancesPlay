@@ -25,12 +25,12 @@ namespace FinancesPlay.View
         private Model.Perguntas.Pergunta perguntas;
 
         public int idPergunta = 1;
-        public Pergunta(Avatar avatar)
+        public Pergunta()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            Avatar = avatar;
-            sfAvAvatar.ImageSource = avatar.Arquivo;
+            Avatar = MainPage.Avatar;
+            sfAvAvatar.ImageSource = MainPage.Avatar.Arquivo;
             dinheiro = 0.5;
             humor = 0.5;
             conhecimento = 0;
@@ -40,9 +40,9 @@ namespace FinancesPlay.View
         {
             try
             {
-                pbDinheiro.Percentage = (float)dinheiro;
-                pbHumor.Percentage = (float)humor;
-                pbConhecimento.Percentage = (float)conhecimento;
+                pbDinheiro.Percentage = (float)MainPage.dinheiro;
+                pbHumor.Percentage = (float)MainPage.humor;
+                pbConhecimento.Percentage = (float)MainPage.conhecimento;
 
                 if (perguntas != null && !String.IsNullOrEmpty(perguntas.Explicacao))
                 {

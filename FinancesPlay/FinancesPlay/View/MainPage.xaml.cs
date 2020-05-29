@@ -14,7 +14,6 @@ namespace FinancesPlay
     {
         public static Avatar Avatar;
         public static ListaPerguntas lstPergunta;
-
         public static double dinheiro { get; set; }
         public static double humor { get; set; }
         public static double conhecimento { get; set; }
@@ -33,7 +32,6 @@ namespace FinancesPlay
         public void BtComecar_Clicked(object sender, EventArgs e)
         {
             Sons.clique.Play();
-
             Navigation.PushAsync(new View.SelecionarAvatar());
         }
     }

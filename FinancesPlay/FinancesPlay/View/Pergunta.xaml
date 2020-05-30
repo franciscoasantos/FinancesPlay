@@ -76,54 +76,19 @@
             </FlexLayout>
 
             <!-- Alternativas -->
-            <FlexLayout Direction="Column"
+            <Grid>
+                <ScrollView>
+                    <FlexLayout Direction="Column"
                         FlexLayout.Grow="0.4"
                         JustifyContent="Center"
-                        AlignContent="Center">
+                        AlignContent="Center"
+                        x:Name="flAlternativas">
 
-                <button:SfButton Text="" 
-                                 Style="{StaticResource alternativa}" 
-                                 Clicked="btnAlternativaA_Clicked" 
-                                 x:Name="btnAlternativaA">
-                    <button:SfButton.BackgroundGradient>
-                        <gradient:SfRadialGradientBrush Radius="10">
-                            <gradient:SfRadialGradientBrush.GradientStops>
-                                <gradient:SfGradientStop Color="#70A288" Offset="0"/>
-                                <gradient:SfGradientStop Color="#4B755F" Offset="1"/>
-                            </gradient:SfRadialGradientBrush.GradientStops>
-                        </gradient:SfRadialGradientBrush>
-                    </button:SfButton.BackgroundGradient>
-                </button:SfButton>
+                       
 
-                <button:SfButton Text=""
-                                 Style="{StaticResource alternativa}" 
-                                 Clicked="btnAlternativaB_Clicked" 
-                                 x:Name="btnAlternativaB">
-                    <button:SfButton.BackgroundGradient>
-                        <gradient:SfRadialGradientBrush Radius="10">
-                            <gradient:SfRadialGradientBrush.GradientStops>
-                                <gradient:SfGradientStop Color="#70A288" Offset="0"/>
-                                <gradient:SfGradientStop Color="#4B755F" Offset="1"/>
-                            </gradient:SfRadialGradientBrush.GradientStops>
-                        </gradient:SfRadialGradientBrush>
-                    </button:SfButton.BackgroundGradient>
-                </button:SfButton>
-                
-                <button:SfButton Text=""
-                                 Style="{StaticResource alternativa}" 
-                                 Clicked="btnAlternativaC_Clicked" 
-                                 x:Name="btnAlternativaC">
-                    <button:SfButton.BackgroundGradient>
-                        <gradient:SfRadialGradientBrush Radius="10">
-                            <gradient:SfRadialGradientBrush.GradientStops>
-                                <gradient:SfGradientStop Color="#70A288" Offset="0"/>
-                                <gradient:SfGradientStop Color="#4B755F" Offset="1"/>
-                            </gradient:SfRadialGradientBrush.GradientStops>
-                        </gradient:SfRadialGradientBrush>
-                    </button:SfButton.BackgroundGradient>
-                </button:SfButton>
-
-            </FlexLayout>
+                    </FlexLayout>
+                </ScrollView>
+            </Grid>
         </FlexLayout>
     </Grid>
 </ContentPage>

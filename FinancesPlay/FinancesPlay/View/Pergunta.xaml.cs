@@ -1,13 +1,8 @@
-﻿using FinancesPlay.Model;
-using FinancesPlay.Model.Imagens;
-using FinancesPlay.Model.Perguntas;
+﻿using FinancesPlay.Model.Imagens;
+using Syncfusion.XForms.Buttons;
+using Syncfusion.XForms.Graphics;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net.Security;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -16,14 +11,11 @@ namespace FinancesPlay.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Pergunta : ContentPage
     {
-        public Alternativa alternativaA { get; set; }
-        public Alternativa alternativaB { get; set; }
-        public Alternativa alternativaC { get; set; }
-        public static double dinheiro { get; set; }
-        public static double humor { get; set; }
-        public static double conhecimento { get; set; }
         public static Avatar Avatar;
         private Model.Perguntas.Pergunta perguntas;
+        public static double Dinheiro { get; set; }
+        public static double Humor { get; set; }
+        public static double Conhecimento { get; set; }
 
         public int idPergunta = 1;
         public Pergunta()
@@ -32,10 +24,10 @@ namespace FinancesPlay.View
             NavigationPage.SetHasNavigationBar(this, false);
             Avatar = MainPage.Avatar;
             sfAvAvatar.ImageSource = MainPage.Avatar.Arquivo;
-            dinheiro = 0.5;
-            humor = 0.5;
-            conhecimento = 0;
-            
+            Dinheiro = 0.5;
+            Humor = 0.5;
+            Conhecimento = 0;
+
         }
         protected override void OnAppearing()
         {
@@ -50,43 +42,40 @@ namespace FinancesPlay.View
                     DisplayAlert("Para conhecimento!", perguntas.Explicacao, "Entendi");
                 }
 
-                perguntas = (from pergunta in MainPage.lstPergunta.Perguntas
-                                 where (pergunta.IdPergunta == idPergunta)
-                                 select pergunta).First();
-
-                this.alternativaA = perguntas.Alternativas.First(alt => alt.IdAlternativa.Equals("A"));
-                this.alternativaB = perguntas.Alternativas.First(alt => alt.IdAlternativa.Equals("B"));
-                this.alternativaC = perguntas.Alternativas.First(alt => alt.IdAlternativa.Equals("C"));
+                perguntas = MainPage.lstPergunta.Perguntas.Where(p => p.IdPergunta == idPergunta).First();
 
                 lblPergunta.Text = perguntas.TextoPergunta;
 
-                btnAlternativaA.Text = this.alternativaA.Texto;
-                btnAlternativaB.Text = this.alternativaB.Texto;
-                btnAlternativaC.Text = this.alternativaC.Texto;
+                flAlternativas.Children.Clear();
+
+                foreach (var alternativa in perguntas.Alternativas)
+                {
+                    SfButton botaoAlternativa = new SfButton
+                    {
+                        Text = alternativa.Texto,
+                        Style = (Style)Application.Current.Resources["alternativa"],
+                        BackgroundGradient = new SfRadialGradientBrush
+                        {
+                            Radius = 10,
+                            GradientStops = new GradientStopCollection()
+                            {
+                                new SfGradientStop(){ Color = Color.FromHex("#70A288"), Offset = 0 },
+                                new SfGradientStop(){ Color = Color.FromHex("#4B755F"), Offset = 1 }
+                            }
+                        }
+                    };
+                    
+                    botaoAlternativa.Clicked += (sender, args) => Navigation.PushAsync(new View.Resposta(alternativa), false);
+
+                    flAlternativas.Children.Add(botaoAlternativa);
+                }
 
                 idPergunta++;
             }
             catch (Exception)
             {
                 lblPergunta.Text = "Fim do jogo!";
-                btnAlternativaA.IsVisible = false;
-                btnAlternativaB.IsVisible = false;
             }
-        }
-
-        private void btnAlternativaA_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new View.Resposta(this.alternativaA),false);
-        }
-
-        private void btnAlternativaB_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new View.Resposta(this.alternativaB),false);
-        }
-
-        private void btnAlternativaC_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new View.Resposta(this.alternativaC), false);
         }
     }
 }

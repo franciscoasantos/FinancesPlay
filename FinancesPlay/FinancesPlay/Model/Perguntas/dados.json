@@ -4,11 +4,11 @@
       //Lorena
       "IdPergunta": 1,
       "TextoPergunta": "Você se considera uma pessoa consumista? ",
-      "Explicacao": " O consumismo é o hábito de adquirir produtos e serviços sem precisar deles. É a compra pelo desejo, e não pela necessidade. ",
+      "Explicacao": "O consumismo é o hábito de adquirir produtos e serviços sem precisar deles. É a compra pelo desejo, e não pela necessidade. ",
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Não me considero.",
+          "Texto": "Não me considero",
           "Dica": "Muito bom!",
           "Certa": true,
           "Dinheiro": 3,
@@ -17,7 +17,7 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Sim.",
+          "Texto": "Sim",
           "Dica": "Reflita sobre a real necessidade de algo antes de comprá-lo. ",
           "Dinheiro": -2,
           "Felicidade": -1,
@@ -25,7 +25,7 @@
         },
         {
           "IdAlternativa": "C",
-          "Texto": "As vezes compro por impulso.",
+          "Texto": "As vezes compro por impulso",
           "Dica": "Mantenha-se firme no momento de distinguir o que você QUER e o que você PRECISA. ",
           "Dinheiro": 0,
           "Felicidade": 0,
@@ -35,20 +35,20 @@
     },
     {
       "IdPergunta": 2,
-      "TextoPergunta": "Você paga suas contas em dia? ",
+      "TextoPergunta": "Você paga suas contas em dia?",
       "Explicacao": null,
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Não consigo pagar minhas contas em dia. ",
-          "Dica": " Pense bem, pagar suas contas em dia significa menos estresse na sua rotina.",
+          "Texto": "Não consigo pagar minhas contas em dia",
+          "Dica": "Pense bem, pagar suas contas em dia significa menos estresse na sua rotina.",
           "Dinheiro": -2,
           "Humor": -1,
           "Conhecimento": -2
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Existem alguns meses que eu atraso.",
+          "Texto": "Existem alguns meses que eu atraso",
           "Dica": "Pense no porquê disso acontecer para tentar encontrar o problema. ",
           "Dinheiro": -1,
           "Felicidade": 1,
@@ -56,7 +56,7 @@
         },
         {
           "IdAlternativa": "C",
-          "Texto": "Sim. Eu pago em dia. ",
+          "Texto": "Sim. Eu pago em dia",
           "Dica": "Muito bom! ",
           "Certa": true,
           "Dinheiro": 3,
@@ -73,15 +73,15 @@
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Não. Não vejo problema. ",
-          "Dica": " Cuidado. Pense em se livrar dos juros.",
+          "Texto": "Não. Não vejo problema",
+          "Dica": "Cuidado. Pense em se livrar dos juros.",
           "Dinheiro": -2,
           "Humor": -1,
           "Conhecimento": -2
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Sim. Quero mudar. ",
+          "Texto": "Sim. Quero mudar",
           "Dica": "Muito bom! ",
           "Certa": true,
           "Dinheiro": 3,
@@ -91,7 +91,7 @@
 
         {
           "IdAlternativa": "C",
-          "Texto": "Depende do tipo de conta.",
+          "Texto": "Depende do tipo de conta",
           "Dica": null,
           "Dinheiro": 0,
           "Felicidade": 1,
@@ -107,7 +107,7 @@
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Sim. ",
+          "Texto": "Sim",
           "Dica": null,
           "Certa": true,
           "Dinheiro": 3,
@@ -116,7 +116,7 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Não.",
+          "Texto": "Não",
           "Dica": "Procure um Banco da sua confiança, irá auxiliar muito nas suas necessidades do dia a dia. ",
           "Dinheiro": -1,
           "Felicidade": -1,
@@ -125,7 +125,7 @@
 
         {
           "IdAlternativa": "C",
-          "Texto": "Não me sinto seguro.",
+          "Texto": "Não me sinto seguro",
           "Dica": "Guardar quantias em casa é bem menos seguro. Hoje em dia os Bancos possuem sistemas fortes de segurança, além de oferecerem facilidades no pagamento de contas e demais transações. ",
           "Dinheiro": 0,
           "Felicidade": 1,
@@ -142,7 +142,7 @@
 
         {
           "IdAlternativa": "A",
-          "Texto": "Prefiro comprar no cartão de parentes.",
+          "Texto": "Prefiro comprar no cartão de parentes",
           "Dica": "O ideal é não utilizar o nome de terceiros. ",
           "Dinheiro": 0,
           "Felicidade": -1,
@@ -150,7 +150,7 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Não.",
+          "Texto": "Não",
           "Dica": null,
           "Dinheiro": -2,
           "Humor": -1,
@@ -158,7 +158,7 @@
         },
         {
           "IdAlternativa": "C",
-          "Texto": "Sim.",
+          "Texto": "Sim",
           "Dica": "Tendo apenas 1 cartão de crédito e sabendo administrar, torna-se uma grande vantagem. ",
           "Certa": true,
           "Dinheiro": 3,
@@ -171,11 +171,11 @@
     {
       "IdPergunta": 6,
       "TextoPergunta": "Quanto de dinheiro você poupa por mês? ",
-      "Explicacao": " O empréstimo pessoal pode ser encontrado em taxa mínima de 2% ao mês, o que corresponde a 24% ao ano, estes percentuais podem ficar muito mais altos dependendo da Instituição Financeira escolhida. ",
+      "Explicacao": "O empréstimo pessoal pode ser encontrado em taxa mínima de 2% ao mês, o que corresponde a 24% ao ano, estes percentuais podem ficar muito mais altos dependendo da Instituição Financeira escolhida. ",
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "20% da renda. ",
+          "Texto": "20% da renda",
           "Dica": "Muito bom! Esta é a porcentagem inicial indicada para quem quer se organizar financeiramente.",
           "Certa": true,
           "Dinheiro": 3,
@@ -184,7 +184,7 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Não consigo poupar. ",
+          "Texto": "Não consigo poupar",
           "Dica": "Pense nisso, se planeje para cortar gastos. Caso ocorra alguma emergência, será necessário pegar um empréstimo, o que não é indicado. ",
           "Dinheiro": -2,
           "Felicidade": -1,
@@ -193,7 +193,7 @@
 
         {
           "IdAlternativa": "C",
-          "Texto": "Não poupo por mês, apenas com ganhos extras.",
+          "Texto": "Não poupo por mês, apenas com ganhos extras",
           "Dica": "Já é um bom caminho! ",
           "Dinheiro": 1,
           "Felicidade": 1,
@@ -210,8 +210,8 @@
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Só conheço a poupança. ",
-          "Dica": " Assim como outros produtos de baixo risco, que variam de acordo com a taxa básica de Juros (Selic), a poupança também possui esta rentabilidade, porém, é a menor do mercado. ",
+          "Texto": "Só conheço a poupança",
+          "Dica": "Assim como outros produtos de baixo risco, que variam de acordo com a taxa básica de Juros (Selic), a poupança também possui esta rentabilidade, porém, é a menor do mercado. ",
           "Dinheiro": -2,
           "Humor": -1,
           "Conhecimento": -2
@@ -219,7 +219,7 @@
 
         {
           "IdAlternativa": "B",
-          "Texto": "Prefiro guardar o dinheiro físico na minha casa.",
+          "Texto": "Prefiro guardar o dinheiro físico na minha casa",
           "Dica": "Além ser uma opção muito arriscada, não iria gerar rendimentos. Pense nisso! ",
           "Dinheiro": 0,
           "Felicidade": -1,
@@ -227,8 +227,8 @@
         },
         {
           "IdAlternativa": "C",
-          "Texto": "Irei procurar o Gerente da minha conta. ",
-          "Dica": " Excelente! Os bancos oferecem esse serviço gratuitamente e os gerentes de contas são capacitados para orientar o cliente no produto que possui maior rentabilidade, de acordo com o seu perfil. ",
+          "Texto": "Irei procurar o Gerente da minha conta",
+          "Dica": "Excelente! Os bancos oferecem esse serviço gratuitamente e os gerentes de contas são capacitados para orientar o cliente no produto que possui maior rentabilidade, de acordo com o seu perfil. ",
           "Certa": true,
           "Dinheiro": 3,
           "Humor": 2,
@@ -240,19 +240,19 @@
     {
       "IdPergunta": 8,
       "TextoPergunta": "Se você possui cartão de crédito, como é feito o pagamento da sua fatura? ",
-      "Explicacao": " Importante saber: \n A Taxa de parcelamento da fatura do cartão de crédito pode variar de 2,5% a 8% ao mês, o que pode gerar o efeito “bola de neve” para os próximos meses. ",
+      "Explicacao": "Importante saber: \n A Taxa de parcelamento da fatura do cartão de crédito pode variar de 2,5% a 8% ao mês, o que pode gerar o efeito “bola de neve” para os próximos meses. ",
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Sempre parcelo a fatura. ",
-          "Dica": " O que você pensa ser uma folguinha no orçamento, nada mais é do que formas de você se endividar ainda mais. ",
+          "Texto": "Sempre parcelo a fatura",
+          "Dica": "O que você pensa ser uma folguinha no orçamento, nada mais é do que formas de você se endividar ainda mais. ",
           "Dinheiro": -2,
           "Humor": -1,
           "Conhecimento": -2
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Pago integralmente. ",
+          "Texto": "Pago integralmente",
           "Dica": "Correto! Sempre ajuste suas despesas para que todo mês a fatura seja paga em seu valor total. ",
           "Certa": true,
           "Dinheiro": 3,
@@ -262,7 +262,7 @@
 
         {
           "IdAlternativa": "C",
-          "Texto": " Se a fatura vier em um valor muito alto, pode ser que eu parcele.",
+          "Texto": "Se a fatura vier em um valor muito alto, pode ser que eu parcele",
           "Dica": "É bem melhor acompanhar seus gastos e não deixar que a fatura venha em um valor que você não consiga pagar. ",
           "Dinheiro": 0,
           "Felicidade": 0,
@@ -274,12 +274,12 @@
     {
       "IdPergunta": 9,
       "TextoPergunta": "Caso você seja desligado da empresa e receba um acerto de aproximadamente R$ 20.000,00. Você compraria um carro? ",
-      "Explicacao": " Para conhecimento: \n Financiamentos devem ser muito bem avaliados. Suponhamos que um Banco pratica a taxa de 1% ao mês. Se o valor do automóvel é R$40.000,00, e será pago em 60 meses, a sua parcela será de R$1.066,00 sendo que R$400,00 correspondem apenas aos juros. \n Automóveis perdem de 20% a 30% do seu valor de compra (taxa de depreciação) no período de dois anos. ",
+      "Explicacao": "Financiamentos devem ser muito bem avaliados. Suponhamos que um Banco pratica a taxa de 1% ao mês. Se o valor do automóvel é R$40.000,00, e será pago em 60 meses, a sua parcela será de R$1.066,00 sendo que R$400,00 correspondem apenas aos juros. \n Automóveis perdem de 20% a 30% do seu valor de compra (taxa de depreciação) no período de dois anos. ",
       "Alternativas": [
 
         {
           "IdAlternativa": "A",
-          "Texto": "Sim. Daria metade do valor como entrada.",
+          "Texto": "Sim. Daria metade do valor como entrada",
           "Dica": "Se o carro é um bem que você precisa, é muito bom decidir dar de entrada apenas a metade do valor para ponderar seus gastos. ",
           "Dinheiro": 0,
           "Felicidade": 1,
@@ -287,7 +287,7 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Não. Ainda não é minha necessidade. ",
+          "Texto": "Não. Ainda não é minha necessidade",
           "Dica": "Muito bom. Hoje contamos com o auxílio de aplicativos de transporte com conforto e valores que cabem no bolso. Se não é sua necessidade no momento, invista o valor e aguarde o momento certo de comprar. Quem sabe não pague à vista! ",
           "Certa": true,
           "Dinheiro": 3,
@@ -296,7 +296,7 @@
         },
         {
           "IdAlternativa": "C",
-          "Texto": "Sim, daria todo o valor de entrada. ",
+          "Texto": "Sim, daria todo o valor de entrada",
           "Dica": "Pense bem. Um carro não é considerado investimento. Além de não ter os 20.000 disponíveis, ainda irá adquirir parcelas de financiamento. Essa decisão cabe mesmo no seu orçamento? ",
           "Dinheiro": -1,
           "Felicidade": -1,
@@ -332,33 +332,10 @@
       ]
     },
 
-    {
-      "IdPergunta": 11,
-      "TextoPergunta": "Você empresta dinheiro sem pensar ou para quem demora pagar? ",
-      "Explicacao": null,
-      "Alternativas": [
-        {
-          "IdAlternativa": "A",
-          "Texto": "Sim",
-          "Dica": "Se você emprestar dinheiro sem saber quando vai receber,você acaba com menos dinheiro final do mês atrapalhando o pagamento das contas ",
-          "Dinheiro": -1,
-          "Humor": -1,
-          "Conhecimento": 0
-        },
-        {
-          "IdAlternativa": "B",
-          "Texto": "Não",
-          "Dica": null,
-          "Certa": true,
-          "Dinheiro": 1,
-          "Felicidade": 2,
-          "Conhecimento": 1
-        }
-      ]
-    },
+
 
     {
-      "IdPergunta": 12,
+      "IdPergunta": 11,
       "TextoPergunta": "Você compara o preço dos produtos quando vai fazer uma compra? ",
       "Explicacao": null,
       "Alternativas": [
@@ -374,7 +351,7 @@
         {
           "IdAlternativa": "B",
           "Texto": "Não",
-          "Dica": "Quando faz essa ação principalmente quando vai comprar muitos produtos de uma vez,acaba economizando mais do que o esperado ",
+          "Dica": "Quando se cria este hábito principalmente quando vai comprar muitos produtos de uma vez,acaba economizando mais do que o esperado",
           "Dinheiro": -2,
           "Felicidade": -1,
           "Conhecimento": 0
@@ -383,8 +360,8 @@
     },
 
     {
-      "IdPergunta": 13,
-      "TextoPergunta": "Você separa dinheiro para as despesas anuais? ",
+      "IdPergunta": 12,
+      "TextoPergunta": "Você separa dinheiro para as despesas anuais?",
       "Explicacao": null,
       "Alternativas": [
         {
@@ -398,7 +375,7 @@
         {
           "IdAlternativa": "B",
           "Texto": "Sim",
-          "Dica": " É importante reservar dinheiro para essas despesas o quanto antes ou guardar uma quantia todo o mês especificamente para elas",
+          "Dica": "É importante reservar dinheiro para essas despesas o quanto antes ou guardar uma quantia todo o mês especificamente para elas",
           "Certa": true,
           "Dinheiro": 3,
           "Felicidade": 3,
@@ -408,8 +385,8 @@
     },
 
     {
-      "IdPergunta": 14,
-      "TextoPergunta": "Qual o melhor lugar para um investimento ? Tesouro direto,bolsa de valores ou na poupança?  ",
+      "IdPergunta": 13,
+      "TextoPergunta": "Qual o melhor lugar para um investimento ? Tesouro direto,bolsa de valores ou na poupança?",
       "Explicacao": null,
       "Alternativas": [
         {
@@ -441,8 +418,8 @@
     },
 
     {
-      "IdPergunta": 15,
-      "TextoPergunta": "Você procura ter alguma educação financeira? ",
+      "IdPergunta": 14,
+      "TextoPergunta": "Você procura ter alguma educação financeira?",
       "Explicacao": null,
       "Alternativas": [
         {
@@ -466,8 +443,8 @@
     },
 
     {
-      "IdPergunta": 16,
-      "TextoPergunta": "Você faz planejamento para pagar suas dívidas? ",
+      "IdPergunta": 15,
+      "TextoPergunta": "Você faz planejamento para pagar suas dívidas?",
       "Explicacao": null,
       "Alternativas": [
         {
@@ -490,9 +467,9 @@
       ]
     },
     {
-      "IdPergunta": 17,
-      "TextoPergunta": "Quando você precisa sair,você costuma usar uber ou transporte coletivo? ",
-      "Explicacao": "Lembre-se de que essa economia é a chance de juntar dinheiro para realizar seus desejos, aproveitar os melhores investimentos ou multiplicar seu dinheiro para conquistar um estilo de vida mais confortável. ",
+      "IdPergunta": 16,
+      "TextoPergunta": "Quando você precisa sair,você costuma usar uber ou transporte coletivo?",
+      "Explicacao": "Lembre-se de que essa economia é a chance de juntar dinheiro para realizar seus desejos, aproveitar os melhores investimentos ou multiplicar seu dinheiro para conquistar um estilo de vida mais confortável.",
       "Alternativas": [
         {
           "IdAlternativa": "A",
@@ -515,7 +492,7 @@
     },
 
     {
-      "IdPergunta": 18,
+      "IdPergunta": 17,
       "TextoPergunta": "Você limita seus gasto coditianos?",
       "Explicacao": "É interessante criar metas de gastos, definindo um valor máximo por mês que pode ser pago por cada tipo de despesa",
       "Alternativas": [
@@ -540,7 +517,7 @@
     },
 
     {
-      "IdPergunta": 19,
+      "IdPergunta": 18,
       "TextoPergunta": "Caso aconteça algum problema você tem uma reserva de emergência?",
       "Explicacao": "Despesas inesperadas podem acontecer a qualquer momento, assim como investimentos lucrativos podem surgir",
       "Alternativas": [
@@ -567,22 +544,22 @@
 
     //Henrique
     {
-      "IdPergunta": 20,
-      "TextoPergunta": " Você tem R$100,00. Tem a opção de ir fazer compras ou investir esse dinheiro.",
+      "IdPergunta": 19,
+      "TextoPergunta": "Você tem R$100,00. Tem a opção de ir fazer compras ou investir esse dinheiro.",
       "Explicacao": null,
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Investir o dinheiro ",
-          "Dica": " Se você optou por investir, parabéns, seu dinheiro duplicará, e com isso poderá retirar os R$100,00 e deixar a outra metade para render mais. ",
+          "Texto": "Investir o dinheiro",
+          "Dica": "Se você optou por investir, parabéns, seu dinheiro duplicará, e com isso poderá retirar os R$100,00 e deixar a outra metade para render mais. ",
           "Certa": true,
-          "Dinheiro": 3,
-          "Humor": 2,
+          "Dinheiro": 2,
+          "Humor": 1,
           "Conhecimento": 3
         },
         {
           "IdAlternativa": "B",
-          "Texto": " Ir fazer compras, preciso de roupas novas ",
+          "Texto": "Ir fazer compras, preciso de roupas novas",
           "Dica": "Optou em fazer compras, está com roupa nova, porém sem dinheiro. ",
           "Dinheiro": -2,
           "Felicidade": -1,
@@ -592,8 +569,8 @@
     },
 
     {
-      "IdPergunta": 21,
-      "TextoPergunta": " Ganhou R$600,00 do auxílio emergencial. O que irá fazer?",
+      "IdPergunta": 20,
+      "TextoPergunta": "Ganhou R$600,00 do auxílio emergencial. O que irá fazer?",
       "Explicacao": null,
       "Alternativas": [
         {
@@ -606,100 +583,53 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Compras coisas básicas",
+          "Texto": "Comprar coisas básicas",
           "Dica": "Comprando produtos básicos, não passará dificuldade, e se sobrar poderá guardar um pouco do dinheiro.",
           "Certa": true,
-          "Dinheiro": 3,
-          "Humor": 2,
-          "Conhecimento": 3
+          "Dinheiro": 1,
+          "Humor": 0,
+          "Conhecimento": 1
         }
       ]
     },
 
     {
-      "IdPergunta": 22,
-      "TextoPergunta": "Levando em consideração o momento atual de quarentena. Você está com a oportunidade de comprar o carro do seu sonho.",
+      "IdPergunta": 21,
+      "TextoPergunta": "Levando em consideração o momento atual de quarentena. Você tem a oportunidade de comprar o carro do seu sonho.",
       "Explicacao": "O preço do carro está de acordo com sua poupança ",
       "Alternativas": [
         {
           "IdAlternativa": "A",
           "Texto": "Vou aproveitar e comprar meu segundo carro",
           "Dica": "Não é o momento adequado de compra, apesar do preço. Planeje suas despesas primeiro.",
-          "Dinheiro": -2,
-          "Felicidade": -1,
+          "Dinheiro": 0,
+          "Felicidade": 0,
           "Conhecimento": 0
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Vou esperar mais.",
+          "Texto": "Vou esperar mais",
           "Dica": "Levando em consideração a atual situação. É melhor aguardar, pois poderá precisar do dinheiro de sua poupança para futuras emergencias.",
           "Certa": true,
-          "Dinheiro": 3,
-          "Humor": 2,
-          "Conhecimento": 3
+          "Dinheiro": 1,
+          "Humor": 0,
+          "Conhecimento": 1
         }
       ]
     },
 
-    {
-      "IdPergunta": 23,
-      "TextoPergunta": "Sabendo que receita é aquilo que você recebe, e que despesa é tudo o que gasta. Escolha a melhor opção para despesa menor que receita.",
-      "Explicacao": "É sempre bom manter despesa menor que receita porque dessa forma não ficará endividado(a).",
-      "Alternativas": [
-        {
-          "IdAlternativa": "A",
-          "Texto": "Tive uma receita de R$1500,00 no mês, tenho dois parcelamentos para pagar de R$500,00 cada um mais a compra de casa que deu R$600,00 e despesa de R$300,00.",
-          "Dica": "Esta opção é inválida pois, produtos a pagar tambem são despesas. Somando todas as despesas descritas acima dará o total de R$1900,00.",
-          "Dinheiro": -2,
-          "Felicidade": -1,
-          "Conhecimento": 0
-        },
-        {
-          "IdAlternativa": "B",
-          "Texto": "Tive uma receita de R$1500,00 no mês, tenho dois parcelamentos de R$500,00 cada um mais a compra de casa que deu R$600,00 pagos e despesa de R$300,00.",
-          "Dica": "Opção correta, pois os parcelamentos e compras de casa já foram pagas, a única despesa que terá é de R$300,00.",
-          "Certa": true,
-          "Dinheiro": 3,
-          "Humor": 2,
-          "Conhecimento": 3
-        }
-      ]
-    },
-
-    {
-      "IdPergunta": 24,
-      "TextoPergunta": "É sexta-feira a noite e você decide sair com os amigos. Está sem dinheiro na carteira, só possui o cartão de crédito. E acaba gastando R$150,00.",
-      "Explicacao": "Sua fatura já está além de sua receita.",
-      "Alternativas": [
-        {
-          "IdAlternativa": "A",
-          "Texto": "Poxa nem percebi o quanto gastei.",
-          "Dica": "Gastei mais do que devia, tenho que analisar melhor minha receita e despesa, para ver o que vou poder gastar.",
-          "Certa": true,
-          "Dinheiro": 3,
-          "Humor": 2,
-          "Conhecimento": 3
-        },
-        {
-          "IdAlternativa": "B",
-          "Texto": "Não tem problema, foi só mais uma noite com amigos",
-          "Dica": "AVISO! Você teve despesa maior que receita, está endividado(a).",
-          "Dinheiro": -2,
-          "Felicidade": -1,
-          "Conhecimento": 0
-        }
-      ]
-    },
     //Fim Henrique
 
+
+    //thiago
     {
-      "IdPergunta": 25,
+      "IdPergunta": 22,
       "TextoPergunta": "Você costuma ir ao supermercado sem saber o que vai comprar? Ou leva contigo uma lista de compras? ",
       "Explicacao": "",
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Eu vou ao supermercado e descubro na hora o que preciso levar.",
+          "Texto": "Eu vou ao supermercado e descubro na hora o que preciso levar",
           "Dica": "É recomendado que a gente saiba exatamente o que comprar. Quando não sabemos, na maioria das vezes, compramos por impulso coisas desnecessárias. Não entre em supermercado sem saber o que comprar!",
           "Dinheiro": -3,
           "Humor": 2,
@@ -707,26 +637,25 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Sim. Sempre levo comigo uma lista de compras.",
+          "Texto": "Sim. Sempre levo comigo uma lista de compras",
           "Dica": "Excelente, quando sabemos o que comprar evitamos gastos desnecessários. ",
           "Certa": true,
           "Dinheiro": 3,
-          "Felicidade": 1,
+          "Humor": 1,
           "Conhecimento": 3
         }
       ]
     },
 
-
     {
-      "IdPergunta": 26,
+      "IdPergunta": 23,
       "TextoPergunta": "Quando sobra algum dinheiro o que você faz? ",
-      "Explicacao": " ",
+      "Explicacao": "",
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Guardo no cofre. ",
-          "Dica": " Não seria melhor guardar o seu dinheiro em algo que lhe renda juros?",
+          "Texto": "Guardo no cofre",
+          "Dica": "Não seria melhor guardar o seu dinheiro em algo que lhe renda juros?",
           "Dinheiro": 1,
           "Humor": 1,
           "Conhecimento": 1
@@ -736,37 +665,37 @@
           "Texto": "Não sobra dinheiro nunca.",
           "Dica": "Comece a buscar e tentar entender o motivo de não sobrar dinheiro. ",
           "Dinheiro": -2,
-          "Felicidade": -2,
+          "Humor": -2,
           "Conhecimento": 0
         },
         {
           "IdAlternativa": "C",
-          "Texto": "Invisto o que sobrou em algo que me gere algum lucro. ",
+          "Texto": "Invisto o que sobrou em algo que me gere algum lucro",
           "Dica": "Parabéns! Investir nem que seja um pouco todo mês te deixa mais próximo da sua liberdade financeira!!!",
           "Certa": true,
           "Dinheiro": 3,
-          "Felicidade": 3,
+          "Humor": 3,
           "Conhecimento": 3
         }
       ]
     },
 
     {
-      "IdPergunta": 27,
+      "IdPergunta": 24,
       "TextoPergunta": "Você faz o seu controle de receitas/despesas? Como? ",
-      "Explicacao": " ",
+      "Explicacao": "",
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Não. Vou gastando sem nenhum tipo de controle. ",
-          "Dica": " Cuidado! Não ter esse controle te joga facilmente para as dívidas e quando você perceber será tarde demais.",
+          "Texto": "Não. Vou gastando sem nenhum tipo de controle",
+          "Dica": "Cuidado! Não ter esse controle te joga facilmente para as dívidas e quando você perceber será tarde demais.",
           "Dinheiro": -1,
           "Humor": 0,
           "Conhecimento": -2
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Sim. Anoto todas as despesas e receitas! ",
+          "Texto": "Sim. Anoto todas as despesas e receitas",
           "Dica": "Muito bom! Assim você consegue se controlar melhor. ",
           "Certa": true,
           "Dinheiro": 3,
@@ -776,7 +705,7 @@
 
         {
           "IdAlternativa": "C",
-          "Texto": "Anoto somente os gastos principais como despesas fixas e receitas recorrentes.",
+          "Texto": "Anoto somente os gastos principais como despesas fixas e receitas recorrentes",
           "Dica": "Legal!",
           "Dinheiro": 2,
           "Felicidade": 2,
@@ -786,9 +715,9 @@
     },
 
     {
-      "IdPergunta": 28,
+      "IdPergunta": 25,
       "TextoPergunta": "Você faz planos para o futuro? ",
-      "Explicacao": " ",
+      "Explicacao": "",
       "Alternativas": [
         {
           "IdAlternativa": "A",
@@ -801,7 +730,7 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Não.",
+          "Texto": "Não",
           "Dica": "Quando nos planejamos fica muito mais fácil concluir determinado objetivo, pense nisso...",
           "Dinheiro": -1,
           "Felicidade": -1,
@@ -811,14 +740,14 @@
     },
 
     {
-      "IdPergunta": 29,
+      "IdPergunta": 26,
       "TextoPergunta": "Você possui mais de uma fonte de renda? ",
       "Explicacao": "Cada lugar que te proporciona alguma receita, mesmo que pequena pode ser considerado uma fonte de renda. (investimentos rentáveis são consdierados)",
       "Alternativas": [
 
         {
           "IdAlternativa": "A",
-          "Texto": "Não, possuo somente uma fonte que é a do meu emprego.",
+          "Texto": "Não, possuo somente uma fonte que é a do meu emprego",
           "Dica": "Depender de uma única fonte de renda não é uma boa ideia, pois você pode facilmente perdê-la. ",
           "Dinheiro": 0,
           "Felicidade": -1,
@@ -826,7 +755,7 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Sim, tenho mais de uma fonte de renda.",
+          "Texto": "Sim, tenho mais de uma fonte de renda",
           "Dica": "Excelente, dessa forma você estará livre para seguir em frente caso haja algum tipo de imprevisto, além de multiplicar o seu dinheiro! ",
           "Certa": true,
           "Dinheiro": 3,
@@ -835,7 +764,7 @@
         },
         {
           "IdAlternativa": "C",
-          "Texto": "Não possuo nenhuma fonte de renda.",
+          "Texto": "Não possuo nenhuma fonte de renda",
           "Dica": "Busque formas de ganhar dinheiro para assim conquistar os seus objetivos e a tão sonhada independência financeira. ",
           "Dinheiro": -3,
           "Felicidade": -3,
@@ -845,13 +774,13 @@
     },
 
     {
-      "IdPergunta": 30,
-      "TextoPergunta": "Acha que a educação financeira é um pilar importante? ",
-      "Explicacao": " Segundo o SPC, 40,2% da população brasileira é inadimplente. ",
+      "IdPergunta": 27,
+      "TextoPergunta": "Acha que a educação financeira é um pilar importante?",
+      "Explicacao": "Segundo o SPC, 40,2% da população brasileira é inadimplente. ",
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Claro. ",
+          "Texto": "Claro",
           "Dica": "A educação financeira ajuda a entender como poupar dinheiro e acima disso, ensina a economizar",
           "Certa": true,
           "Dinheiro": 2,
@@ -860,7 +789,7 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Não acho. ",
+          "Texto": "Não acho",
           "Dica": "",
           "Dinheiro": -1,
           "Felicidade": 0,
@@ -869,16 +798,15 @@
       ]
     },
 
-
     {
-      "IdPergunta": 31,
+      "IdPergunta": 28,
       "TextoPergunta": "Você tem uma reserva de emergência? ",
       "Explicacao": "É um dinheiro que você poupa para algum tipo de imprevisto.",
       "Alternativas": [
         {
           "IdAlternativa": "A",
-          "Texto": "Sim. ",
-          "Dica": " Muito bom, dessa forma você não passará aperto caso haja alguma emergência. ",
+          "Texto": "Sim",
+          "Dica": "Muito bom, dessa forma você não passará aperto caso haja alguma emergência. ",
           "Dinheiro": 2,
           "Certa": true,
           "Humor": 1,
@@ -886,15 +814,136 @@
         },
         {
           "IdAlternativa": "B",
-          "Texto": "Não. ",
-          "Dica": " Recomendamos que você pense nisso, pois o seu futuro está em jogo. ",
+          "Texto": "Não",
+          "Dica": "Recomendamos que você pense nisso, pois o seu futuro está em jogo. ",
           "Dinheiro": -1,
           "Humor": 0,
           "Conhecimento": 0
         }
       ]
-    }
+    },
     //Tiago
 
+    //Daniel
+    {
+      "IdPergunta": 29,
+      "TextoPergunta": "Você estuda algum tipo material voltado para o conhecimento financeiro?",
+      "Explicacao": "",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Sim",
+          "Dica": "Muito bom, investir na sua educação financeira vai fazer muita diferença para o seu orçamento. Hoje,  há muito meios para você obter conhecimento.",
+          "Dinheiro": 1,
+          "Certa": true,
+          "Humor": 1,
+          "Conhecimento": 3
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Não",
+          "Dica": "Recomendamos que você pense nisso, pois dessa forma, você vai saber como lidar com o seu dinheiro, aprendendo como investir as suas economia de forma rentável e segura.",
+          "Dinheiro": 0,
+          "Humor": 0,
+          "Conhecimento": -3
+        }
+      ]
+    },
+    {
+      "IdPergunta": 30,
+      "TextoPergunta": "As pessoas que moram com você, de alguma forma recebe alguma ajuda com a economia? Como por exemplo, contas da casa, energia, água, supermercado e etc.",
+      "Explicacao": "",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Sim",
+          "Dica": "Muito bom, até as crianças devem participar. Desde cedo é bom ensinar a elas sobre o valor do dinheiro.",
+          "Dinheiro": 1,
+          "Certa": true,
+          "Humor": 1,
+          "Conhecimento": 2
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Não",
+          "Dica": "É interessante mobilizar sua família para ajudar a economizar os gastos em casa, a colaboração da sua família é muito importante para dar um jeito na vida financeira. Com a união, os resultados tendem a ser ainda melhores.",
+          "Dinheiro": -1,
+          "Humor": 0,
+          "Conhecimento": -2
+        }
+      ]
+    },
+    {
+      "IdPergunta": 31,
+      "TextoPergunta": "Você costuma vender os itens que não usa?",
+      "Explicacao": "",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Sim",
+          "Dica": "Muito bom, essa é uma dica para você conseguir uma grana extra e praticar a economia sustentável.",
+          "Dinheiro": 3,
+          "Certa": true,
+          "Humor": 2,
+          "Conhecimento": 1
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Não",
+          "Dica": "Faça um levantamento de todas as coisas que você não utiliza mais, aliás, é sempre bom ter mais espaço em casa, não é?",
+          "Dinheiro": 0,
+          "Humor": 0,
+          "Conhecimento": -1
+        }
+      ]
+    },
+    {
+      "IdPergunta": 32,
+      "TextoPergunta": "Você possui algum tipo de planilha de gastos mensais?",
+      "Explicacao": "",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Sim",
+          "Dica": "Muito bom, desta forma você controla o que vê, ficando ainda mais fácil de poupar aquela graninha no final do mês",
+          "Dinheiro": 0,
+          "Certa": true,
+          "Humor": 1,
+          "Conhecimento": 3
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Não",
+          "Dica": "É uma boa ideia montar uma planilha, mesmo que simples, para você conseguir controlar tudo aquilo que entra e sai da sua renda",
+          "Dinheiro": 0,
+          "Humor": 0,
+          "Conhecimento": -3
+        }
+      ]
+    },
+    {
+      "IdPergunta": 33,
+      "TextoPergunta": "Você faz cortes de serviços que não usa? Porém continua pagando todo mês?",
+      "Explicacao": "",
+      "Alternativas": [
+        {
+          "IdAlternativa": "A",
+          "Texto": "Sim",
+          "Dica": "Muito bem, com estes cortes você poderá poupar mais um pouquinho para o final do mês",
+          "Dinheiro": -3,
+          "Certa": true,
+          "Humor": 0,
+          "Conhecimento": -3
+        },
+        {
+          "IdAlternativa": "B",
+          "Texto": "Não",
+          "Dica": "Após fazer o controle dos gastos com a planilha, ficará muito fácil identicá-los. Corte estes gastos para não pagar por algo que não está usando",
+          "Dinheiro": -3,
+          "Humor": 0,
+          "Conhecimento": -3
+        }
+      ]
+    }
   ]
 }

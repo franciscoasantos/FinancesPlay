@@ -19,7 +19,6 @@ namespace FinancesPlay.View
         public static double Humor { get; set; }
         public static double Conhecimento { get; set; }
 
-        public int idPergunta = 1;
         public Pergunta()
         {
             _repo = new Repositorio();
@@ -46,7 +45,7 @@ namespace FinancesPlay.View
                     DisplayAlert("Para conhecimento!", pergunta.Explicacao, "Entendi");
                 }
 
-                pergunta = _repo.GetPerguntaById(idPergunta);
+                pergunta = _repo.GetPergunta();
 
                 lblPergunta.Text = pergunta.TextoPergunta;
 
@@ -73,12 +72,11 @@ namespace FinancesPlay.View
 
                     flAlternativas.Children.Add(botaoAlternativa);
                 }
-
-                idPergunta++;
             }
             catch (Exception)
             {
                 lblPergunta.Text = "Fim do jogo!";
+                flAlternativas.Children.Clear();
             }
         }
     }

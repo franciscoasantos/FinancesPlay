@@ -23,8 +23,8 @@ namespace FinancesPlay
             InitializeComponent();
             
             var assembly = typeof(MainPage).GetTypeInfo().Assembly;
-            //imgLogo.Source = ImageSource.FromResource($"{assembly.GetName().Name}.Model.Imagens.logo.png");
-            
+            imgLogo.Source = ImageSource.FromResource($"{assembly.GetName().Name}.Model.Imagens.logo.png");
+
             Sons.carregarSons();
             lstPergunta = new Repositorio().LerJson();
         }

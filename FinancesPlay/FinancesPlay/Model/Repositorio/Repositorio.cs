@@ -27,9 +27,7 @@ namespace FinancesPlay.Model.Repositorio
 
         public Pergunta GetPerguntaById(int idPergunta)
         {
-            return (from pergunta in MainPage.lstPergunta.Perguntas
-                             where (pergunta.IdPergunta == idPergunta)
-                             select pergunta).First();
+            return MainPage.lstPergunta.Perguntas.Where(p => p.IdPergunta == idPergunta).First();
         }
         public Alternativa GetAlternativa(Pergunta pergunta, string alternativa)
         {

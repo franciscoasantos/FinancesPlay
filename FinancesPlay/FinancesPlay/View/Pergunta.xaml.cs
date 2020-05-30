@@ -1,4 +1,5 @@
 ﻿using FinancesPlay.Model.Imagens;
+using FinancesPlay.Model.Repositorio;
 using Syncfusion.XForms.Buttons;
 using Syncfusion.XForms.Graphics;
 using System;
@@ -12,7 +13,8 @@ namespace FinancesPlay.View
     public partial class Pergunta : ContentPage
     {
         public static Avatar Avatar;
-        private Model.Perguntas.Pergunta perguntas;
+        private Repositorio _repo;
+        private Model.Perguntas.Pergunta pergunta;
         public static double Dinheiro { get; set; }
         public static double Humor { get; set; }
         public static double Conhecimento { get; set; }
@@ -20,6 +22,8 @@ namespace FinancesPlay.View
         public int idPergunta = 1;
         public Pergunta()
         {
+            _repo = new Repositorio();
+
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             Avatar = MainPage.Avatar;
@@ -37,18 +41,18 @@ namespace FinancesPlay.View
                 pbHumor.Percentage = (float)MainPage.humor;
                 pbConhecimento.Percentage = (float)MainPage.conhecimento;
 
-                if (perguntas != null && !String.IsNullOrEmpty(perguntas.Explicacao))
+                if (pergunta != null && !String.IsNullOrEmpty(pergunta.Explicacao))
                 {
-                    DisplayAlert("Para conhecimento!", perguntas.Explicacao, "Entendi");
+                    DisplayAlert("Para conhecimento!", pergunta.Explicacao, "Entendi");
                 }
 
-                perguntas = MainPage.lstPergunta.Perguntas.Where(p => p.IdPergunta == idPergunta).First();
+                pergunta = _repo.GetPerguntaById(idPergunta);
 
-                lblPergunta.Text = perguntas.TextoPergunta;
+                lblPergunta.Text = pergunta.TextoPergunta;
 
                 flAlternativas.Children.Clear();
 
-                foreach (var alternativa in perguntas.Alternativas)
+                foreach (var alternativa in pergunta.Alternativas)
                 {
                     SfButton botaoAlternativa = new SfButton
                     {

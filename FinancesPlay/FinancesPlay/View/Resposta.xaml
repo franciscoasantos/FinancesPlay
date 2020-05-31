@@ -22,7 +22,7 @@
             <!-- Barra de status -->
             <FlexLayout Direction="Column" FlexLayout.Grow="0.15" Margin="10">
                 <Grid>
-                    <Label Text="Gabriel Capila" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center" FontSize="20"></Label>
+                    <Label x:Name="labelNome" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center" FontSize="20"></Label>
                     <sfavatar:SfAvatarView 
                     x:Name="sfAvAvatar"
                     BackgroundColor="WhiteSmoke"

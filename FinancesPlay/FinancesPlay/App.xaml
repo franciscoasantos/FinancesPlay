@@ -32,6 +32,7 @@
                 <Setter Property="BorderColor" Value="#486b58"/>
                 <Setter Property="BorderWidth" Value="0.5"/>
                 <Setter Property="Margin" Value = "5"/>
+                <Setter Property="HasShadow" Value = "True"/>
                 <Setter Property="HeightRequest" Value = "45"/>
             </Style>
             <Style x:Key="barraProgresso" TargetType="controls:ProgressBar">

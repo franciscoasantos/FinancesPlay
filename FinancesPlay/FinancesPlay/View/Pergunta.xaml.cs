@@ -25,6 +25,7 @@ namespace FinancesPlay.View
 
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            labelNome.Text = MainPage.Nome;
             Avatar = MainPage.Avatar;
             sfAvAvatar.ImageSource = MainPage.Avatar.Arquivo;
             Dinheiro = 0.5;

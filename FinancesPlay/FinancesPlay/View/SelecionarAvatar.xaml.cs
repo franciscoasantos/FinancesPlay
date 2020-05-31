@@ -1,5 +1,6 @@
 ﻿using FinancesPlay.Model.Imagens;
 using FinancesPlay.Model.Sons;
+using Syncfusion.XForms.TextInputLayout;
 using System;
 using System.Collections.ObjectModel;
 using System.Reflection;
@@ -37,6 +38,7 @@ namespace FinancesPlay.View
         {
             Sons.clique.Play();
             MainPage.Avatar = (Avatar)cvAvatar.CurrentItem;
+            MainPage.Nome = inputNome.Text;
             Navigation.PushAsync(new View.Pergunta());
         }
     }

@@ -27,7 +27,7 @@
             <!-- Barra de status -->
             <FlexLayout Direction="Column" FlexLayout.Grow="0.2">
                 <Grid Margin="10">
-                    <Label Text="Gabriel Capila" 
+                    <Label x:Name="labelNome" 
                            TextColor="WhiteSmoke" 
                            FontAttributes="Bold" 
                            Grid.Row="2" Grid.Column="2" 

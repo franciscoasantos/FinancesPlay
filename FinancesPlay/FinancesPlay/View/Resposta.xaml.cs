@@ -1,7 +1,11 @@
-﻿using FinancesPlay.Model.Perguntas;
+﻿using FinancesPlay.Model.Imagens;
+using FinancesPlay.Model.Perguntas;
 using FinancesPlay.Model.Sons;
 using System;
+using System.Collections.ObjectModel;
+using System.Reflection;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
 namespace FinancesPlay.View
@@ -10,6 +14,10 @@ namespace FinancesPlay.View
     public partial class Resposta : ContentPage
     {
         private Alternativa Alternativa;
+        public ObservableCollection<Animacao> animacoes = new ObservableCollection<Animacao>();
+        public ObservableCollection<Animacao> Animacoes { get { return animacoes; } }
+        public bool IsPlaying { get; set; }
+
         public Resposta(Alternativa Alternativa)
         {
             InitializeComponent();
@@ -24,12 +32,15 @@ namespace FinancesPlay.View
         }
         protected override void OnAppearing()
         {
+            var assembly = typeof(MainPage).GetTypeInfo().Assembly;
             if (Alternativa.Certa)
             {
+                imageAnimacao.Source = ImageSource.FromResource($"{assembly.GetName().Name}.Model.Imagens.certa1.png");
                 Sons.dinheiro.Play();
             }
             else
             {
+                imageAnimacao.Source = ImageSource.FromResource($"{assembly.GetName().Name}.Model.Imagens.errada1.png");
                 Sons.errado.Play();
             }
 
@@ -61,5 +72,20 @@ namespace FinancesPlay.View
             Sons.clique.Play();
             Application.Current.MainPage.Navigation.PopAsync(false);
         }
+
+        void criarColecaoAnimacoes()
+        {
+            var assembly = typeof(MainPage).GetTypeInfo().Assembly;
+            //Carregar avatares
+            for (int i = 1; i <= 1; i++)
+            {
+                animacoes.Add(new Animacao
+                {
+                    Nome = "certa" + i + ".png",
+                    Arquivo = ImageSource.FromResource($"{assembly.GetName().Name}.Model.Imagens.certa" + i + ".png"),
+                });
+            }
+        }
+
     }
 }

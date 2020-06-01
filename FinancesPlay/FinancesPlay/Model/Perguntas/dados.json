@@ -108,7 +108,7 @@
         {
           "IdAlternativa": "A",
           "Texto": "Sim",
-          "Dica": null,
+          "Dica": "Muito Bom!",
           "Certa": true,
           "Dinheiro": 3,
           "Humor": 2,
@@ -125,7 +125,7 @@
 
         {
           "IdAlternativa": "C",
-          "Texto": "Não me sinto seguro",
+          "Texto": "Não, prefiro guradar meu dinheiro em casa",
           "Dica": "Guardar quantias em casa é bem menos seguro. Hoje em dia os Bancos possuem sistemas fortes de segurança, além de oferecerem facilidades no pagamento de contas e demais transações. ",
           "Dinheiro": 0,
           "Felicidade": 1,

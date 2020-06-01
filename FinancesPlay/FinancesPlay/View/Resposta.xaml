@@ -53,15 +53,23 @@
             </FlexLayout>
 
             <!-- Conteúdo  -->
-            <FlexLayout FlexLayout.Grow="1">
-                <Label Text="Lorem ipsum doaaaaa aaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaaalor sit amet?"
-                   x:Name="lblDica"
-                   Margin="20"
-                   LineBreakMode="WordWrap"
-                   FontSize="30"
-                   TextColor="#cfdde8"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+            <FlexLayout FlexLayout.Grow="1" Direction="Column">
+                <RelativeLayout>
+                    <FlexLayout JustifyContent="Center"
+                                AlignItems="End">
+                    <Image x:Name="imageAnimacao"
+                           Aspect="AspectFill"/>
+                    </FlexLayout>
+                    <StackLayout>
+                        <Label Text="Lorem ipsum doaaaaa aaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaaalor sit amet?"
+                               x:Name="lblDica"
+                               Margin="20"
+                               LineBreakMode="WordWrap"
+                               FontSize="30"
+                               TextColor="#cfdde8"
+                               HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </RelativeLayout>
             </FlexLayout>
 
             <!-- Botão continuar -->

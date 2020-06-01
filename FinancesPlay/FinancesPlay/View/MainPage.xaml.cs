@@ -3,6 +3,7 @@ using FinancesPlay.Model.Perguntas;
 using FinancesPlay.Model.Repositorio;
 using FinancesPlay.Model.Sons;
 using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Reflection;
 using Xamarin.Forms;
@@ -19,6 +20,7 @@ namespace FinancesPlay
         public static double humor { get; set; }
         public static double conhecimento { get; set; }
 
+
         public MainPage()
         {
             InitializeComponent();
@@ -28,6 +30,7 @@ namespace FinancesPlay
 
             Sons.carregarSons();
             lstPergunta = new Repositorio().LerJson();
+
         }
 
         public void BtComecar_Clicked(object sender, EventArgs e)

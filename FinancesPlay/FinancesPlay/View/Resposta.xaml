@@ -36,7 +36,7 @@
                     WidthRequest="54"/>
                     <controls:ProgressBar
                     x:Name="pbDinheiro"
-                    Text="$$$"
+                    Text="Dinheiro"
                     Grid.Row="0" Grid.Column="0" 
                     Style="{StaticResource barraProgresso}"/>
                     <controls:ProgressBar

@@ -20,8 +20,8 @@
         <FlexLayout Direction="Column" >
 
             <!-- Barra de status -->
-            <FlexLayout Direction="Column" FlexLayout.Grow="0.15" Margin="10">
-                <Grid>
+            <FlexLayout Direction="Column" FlexLayout.Grow="0.2" BackgroundColor="#0B132B">
+                <Grid Margin="10">
                     <Label x:Name="labelNome" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center" FontSize="20"></Label>
                     <sfavatar:SfAvatarView 
                     x:Name="sfAvAvatar"

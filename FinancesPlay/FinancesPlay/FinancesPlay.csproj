@@ -26,6 +26,7 @@
     <None Remove="Model\Sons\click.ogg" />
     <None Remove="Model\Sons\dinheiro.ogg" />
     <None Remove="Model\Sons\errado.ogg" />
+    <None Remove="Model\Sons\intro.mp3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,6 +47,7 @@
     <EmbeddedResource Include="Model\Sons\click.ogg" />
     <EmbeddedResource Include="Model\Sons\dinheiro.ogg" />
     <EmbeddedResource Include="Model\Sons\errado.ogg" />
+    <EmbeddedResource Include="Model\Sons\intro.mp3" />
   </ItemGroup>
 
   <ItemGroup>

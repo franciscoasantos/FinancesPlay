@@ -36,6 +36,7 @@ namespace FinancesPlay.View
         }
         private void btnEscolher_Clicked(object sender, EventArgs e)
         {
+            Sons.intro.Stop();
             Sons.clique.Play();
             MainPage.Avatar = (Avatar)cvAvatar.CurrentItem;
             MainPage.Nome = inputNome.Text;

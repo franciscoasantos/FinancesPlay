@@ -9,6 +9,7 @@ namespace FinancesPlay.Model.Sons
         public static ISimpleAudioPlayer clique { get; set; }
         public static ISimpleAudioPlayer dinheiro { get; set; }
         public static ISimpleAudioPlayer errado { get; set; }
+        public static ISimpleAudioPlayer intro { get; set; }
         public static void carregarSons()
         {
             string nomePasta = "Model.Sons";
@@ -36,6 +37,13 @@ namespace FinancesPlay.Model.Sons
             audioStream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{nomePasta}.{soundFileName}");
             wrongSound.Load(audioStream);
             errado = wrongSound;
+
+            //Carregar som de errado
+            var introSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+            soundFileName = "intro.mp3";
+            audioStream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{nomePasta}.{soundFileName}");
+            introSound.Load(audioStream);
+            intro = introSound;
         }
     }
 }

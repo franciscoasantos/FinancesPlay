@@ -29,6 +29,7 @@ namespace FinancesPlay
             imgLogo.Source = ImageSource.FromResource($"{assembly.GetName().Name}.Model.Imagens.logo.png");
 
             Sons.carregarSons();
+            Sons.intro.Play();
             lstPergunta = new Repositorio().LerJson();
 
         }

@@ -48,7 +48,7 @@ namespace FinancesPlay.View
 
             //Métodos para incrementar os valores na barra de status
             setDinheiro(Alternativa.Dinheiro);
-            setHumor(Alternativa.Felicidade);
+            setHumor(Alternativa.Humor);
             setConhecimento(Alternativa.Conhecimento);
         }
 

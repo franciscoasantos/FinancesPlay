@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancesPlay.Android", "Fin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancesPlay.iOS", "FinancesPlay\FinancesPlay.iOS\FinancesPlay.iOS.csproj", "{BA4FCEB5-32E7-486A-B4C0-9998C7E5E819}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancesPlay", "FinancesPlay\FinancesPlay\FinancesPlay.csproj", "{C1361869-88E3-4FE4-84CB-DB116FC87F02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancesPlay", "FinancesPlay\FinancesPlay\FinancesPlay.csproj", "{C1361869-88E3-4FE4-84CB-DB116FC87F02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -17,7 +17,7 @@ namespace FinancesPlay
         public static string Nome;
         public static ListaPerguntas lstPergunta;
         public static double dinheiro { get; set; }
-        public static double humor { get; set; }
+        public static double humor = 0.5;
         public static double conhecimento { get; set; }
 
 

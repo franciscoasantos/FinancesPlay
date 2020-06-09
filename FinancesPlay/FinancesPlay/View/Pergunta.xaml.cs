@@ -28,10 +28,6 @@ namespace FinancesPlay.View
             labelNome.Text = MainPage.Nome;
             Avatar = MainPage.Avatar;
             sfAvAvatar.ImageSource = MainPage.Avatar.Arquivo;
-            Dinheiro = 0.5;
-            Humor = 0.5;
-            Conhecimento = 0;
-
         }
         protected override void OnAppearing()
         {
@@ -76,8 +72,7 @@ namespace FinancesPlay.View
             }
             catch (Exception)
             {
-                lblPergunta.Text = "Fim do jogo!";
-                flAlternativas.Children.Clear();
+                Navigation.PushAsync(new View.Fim(), false);
             }
         }
     }

@@ -4605,6 +4605,13 @@ namespace FinancesPlay.Droid
 			global::Syncfusion.XForms.Android.Core.Resource.Drawable.input_layout_drop_down_icon = global::FinancesPlay.Droid.Resource.Drawable.input_layout_drop_down_icon;
 			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglecollapseicon = global::FinancesPlay.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
 			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglevisibleicon = global::FinancesPlay.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Drawable.sfprogressbar_determinate_linear = global::FinancesPlay.Droid.Resource.Drawable.sfprogressbar_determinate_linear;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Drawable.sfprogressbar_indeterminate_circular = global::FinancesPlay.Droid.Resource.Drawable.sfprogressbar_indeterminate_circular;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Drawable.sfprogressbar_indeterminate_linear = global::FinancesPlay.Droid.Resource.Drawable.sfprogressbar_indeterminate_linear;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Id.sfprogressbar_progress = global::FinancesPlay.Droid.Resource.Id.sfprogressbar_progress;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Id.sfprogressbar_secondary_progress = global::FinancesPlay.Droid.Resource.Id.sfprogressbar_secondary_progress;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Id.sfprogressbar_track = global::FinancesPlay.Droid.Resource.Id.sfprogressbar_track;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.String.library_name = global::FinancesPlay.Droid.Resource.String.library_name;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::FinancesPlay.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::FinancesPlay.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::FinancesPlay.Droid.Resource.Attribute.font;
@@ -13126,26 +13133,26 @@ namespace FinancesPlay.Droid
 			// aapt resource value: 0x7f020072
 			public const int avd_hide_password = 2130837618;
 			
-			// aapt resource value: 0x7f0200a0
-			public const int avd_hide_password_1 = 2130837664;
+			// aapt resource value: 0x7f0200a3
+			public const int avd_hide_password_1 = 2130837667;
 			
-			// aapt resource value: 0x7f0200a1
-			public const int avd_hide_password_2 = 2130837665;
+			// aapt resource value: 0x7f0200a4
+			public const int avd_hide_password_2 = 2130837668;
 			
-			// aapt resource value: 0x7f0200a2
-			public const int avd_hide_password_3 = 2130837666;
+			// aapt resource value: 0x7f0200a5
+			public const int avd_hide_password_3 = 2130837669;
 			
 			// aapt resource value: 0x7f020073
 			public const int avd_show_password = 2130837619;
 			
-			// aapt resource value: 0x7f0200a3
-			public const int avd_show_password_1 = 2130837667;
+			// aapt resource value: 0x7f0200a6
+			public const int avd_show_password_1 = 2130837670;
 			
-			// aapt resource value: 0x7f0200a4
-			public const int avd_show_password_2 = 2130837668;
+			// aapt resource value: 0x7f0200a7
+			public const int avd_show_password_2 = 2130837671;
 			
-			// aapt resource value: 0x7f0200a5
-			public const int avd_show_password_3 = 2130837669;
+			// aapt resource value: 0x7f0200a8
+			public const int avd_show_password_3 = 2130837672;
 			
 			// aapt resource value: 0x7f020074
 			public const int btn_checkbox = 2130837620;
@@ -13255,11 +13262,11 @@ namespace FinancesPlay.Droid
 			// aapt resource value: 0x7f020097
 			public const int notification_icon_background = 2130837655;
 			
-			// aapt resource value: 0x7f02009e
-			public const int notification_template_icon_bg = 2130837662;
+			// aapt resource value: 0x7f0200a1
+			public const int notification_template_icon_bg = 2130837665;
 			
-			// aapt resource value: 0x7f02009f
-			public const int notification_template_icon_low_bg = 2130837663;
+			// aapt resource value: 0x7f0200a2
+			public const int notification_template_icon_low_bg = 2130837666;
 			
 			// aapt resource value: 0x7f020098
 			public const int notification_tile_bg = 2130837656;
@@ -13271,13 +13278,22 @@ namespace FinancesPlay.Droid
 			public const int Prev = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int tooltip_frame_dark = 2130837659;
+			public const int sfprogressbar_determinate_linear = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int tooltip_frame_light = 2130837660;
+			public const int sfprogressbar_indeterminate_circular = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int Up = 2130837661;
+			public const int sfprogressbar_indeterminate_linear = 2130837661;
+			
+			// aapt resource value: 0x7f02009e
+			public const int tooltip_frame_dark = 2130837662;
+			
+			// aapt resource value: 0x7f02009f
+			public const int tooltip_frame_light = 2130837663;
+			
+			// aapt resource value: 0x7f0200a0
+			public const int Up = 2130837664;
 			
 			static Drawable()
 			{
@@ -13777,6 +13793,15 @@ namespace FinancesPlay.Droid
 			
 			// aapt resource value: 0x7f0b004f
 			public const int selected = 2131427407;
+			
+			// aapt resource value: 0x7f0b00de
+			public const int sfprogressbar_progress = 2131427550;
+			
+			// aapt resource value: 0x7f0b00dd
+			public const int sfprogressbar_secondary_progress = 2131427549;
+			
+			// aapt resource value: 0x7f0b00dc
+			public const int sfprogressbar_track = 2131427548;
 			
 			// aapt resource value: 0x7f0b00d6
 			public const int shellcontent_appbar = 2131427542;

@@ -54,7 +54,7 @@ namespace FinancesPlay.View
 
         private void setDinheiro(double valor)
         {
-            MainPage.dinheiro += (valor * 2) / 100;
+            MainPage.dinheiro += (valor * 1.852) / 100;
             pbDinheiro.Percentage = (float)MainPage.dinheiro;
         }
         private void setHumor(double valor)
@@ -64,7 +64,7 @@ namespace FinancesPlay.View
         }
         private void setConhecimento(double valor)
         {
-            MainPage.conhecimento += (valor * 2) / 100;
+            MainPage.conhecimento += (valor * 1.3158) / 100;
             pbConhecimento.Percentage = (float)MainPage.conhecimento;
         }
         private void btnContinuar_Clicked(object sender, EventArgs e)

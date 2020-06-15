@@ -33,9 +33,10 @@ namespace FinancesPlay.View
         {
             try
             {
-                pbDinheiro.Percentage = (float)MainPage.dinheiro;
-                pbHumor.Percentage = (float)MainPage.humor;
-                pbConhecimento.Percentage = (float)MainPage.conhecimento;
+                pbDinheiro.Progress = (float)MainPage.dinheiro;
+                pbHumor.Progress = (float)MainPage.humor;
+                labelHumor.Text = Resposta.RetornarEmoji();
+                pbConhecimento.Progress = (float)MainPage.conhecimento;
 
                 if (pergunta != null && !String.IsNullOrEmpty(pergunta.Explicacao))
                 {

@@ -17,6 +17,8 @@ namespace FinancesPlay.View
         public Fim()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasBackButton(this, false);
             var conhecimento = MainPage.conhecimento;
 
             flexLayoutStatus.Children.Add(new SfCircularProgressBar

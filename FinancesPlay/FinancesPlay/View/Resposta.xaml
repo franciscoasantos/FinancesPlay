@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms" xmlns:controls="clr-namespace:FinancesPlay.Controller" xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms" xmlns:controls="clr-namespace:FinancesPlay.Controller" xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms" xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
              mc:Ignorable="d"
              x:Class="FinancesPlay.View.Resposta">
     <Grid>
@@ -22,33 +22,63 @@
             <!-- Barra de status -->
             <FlexLayout Direction="Column" FlexLayout.Grow="0.2" BackgroundColor="#0B132B">
                 <Grid Margin="10">
-                    <Label x:Name="labelNome" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center" FontSize="20"></Label>
+                    <Label x:Name="labelNome" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="2" Grid.Column="3" HorizontalOptions="Center" FontSize="20"></Label>
                     <sfavatar:SfAvatarView 
                     x:Name="sfAvAvatar"
                     BackgroundColor="WhiteSmoke"
                     ContentType="Custom"
                     Grid.Row="0"
-                    Grid.Column="2" Grid.RowSpan="3" 
+                    Grid.Column="3" Grid.RowSpan="3" 
                     VerticalOptions="Start"
                     HorizontalOptions="Center"   
                     HeightRequest="54"
                     CornerRadius="20"
                     WidthRequest="54"/>
-                    <controls:ProgressBar
-                    x:Name="pbDinheiro"
-                    Text="Dinheiro"
-                    Grid.Row="0" Grid.Column="0" 
-                    Style="{StaticResource barraProgresso}"/>
-                    <controls:ProgressBar
-                    x:Name="pbHumor"
-                    Text="Humor"
-                    Grid.Row="1" Grid.Column="0"
-                    Style="{StaticResource barraProgresso}"/>
-                    <controls:ProgressBar
-                    x:Name="pbConhecimento"
-                    Text="Conhecimento"
-                    Grid.Row="2" Grid.Column="0"
-                    Style="{StaticResource barraProgresso}"/>
+                    <progressBar:SfCircularProgressBar x:Name="pbDinheiro" 
+                                                       Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                                                       IndicatorOuterRadius="0.7" 
+                                                       IndicatorInnerRadius="0.55" 
+                                                       ShowProgressValue="False" 
+                                                       ProgressColor="Green">
+                        <progressBar:SfCircularProgressBar.Content>
+                            <Label x:Name="labelDinheiro"
+                                   TextColor="White" 
+                                   Text="&#x1F4B5;" 
+                                   FontSize="35"
+                                   Padding="0,-5,0,0">
+                            </Label>
+                        </progressBar:SfCircularProgressBar.Content>
+                    </progressBar:SfCircularProgressBar>
+                    <progressBar:SfCircularProgressBar x:Name="pbHumor" 
+                                                       Grid.Column="1" Grid.Row="0" Grid.RowSpan="3"
+                                                       IndicatorOuterRadius="0.7" 
+                                                       IndicatorInnerRadius="0.55"
+                                                       ShowProgressValue="False"
+                                                       ProgressColor="Purple">
+                        <progressBar:SfCircularProgressBar.Content>
+                            <Label x:Name="labelHumor"
+                                   TextColor="White" 
+                                   Text="&#x1F610;" 
+                                   FontSize="40"
+                                   Padding="0,-5,0,0">
+                            </Label>
+                        </progressBar:SfCircularProgressBar.Content>
+                    </progressBar:SfCircularProgressBar>
+                    <progressBar:SfCircularProgressBar x:Name="pbConhecimento" 
+                                                       Grid.Column="2" Grid.Row="0" Grid.RowSpan="3"
+                                                       IndicatorOuterRadius="0.7" 
+                                                       IndicatorInnerRadius="0.55" 
+                                                       ShowProgressValue="False"
+                                                       ProgressColor="Gold">
+                        <progressBar:SfCircularProgressBar.Content>
+                            <Label x:Name="labelConhecimento"
+                                   TextColor="White" 
+                                   Text="&#x1F9E0;" 
+                                   FontSize="40"
+                                   Padding="0,-5,0,0">
+                            </Label>
+                        </progressBar:SfCircularProgressBar.Content>
+                    </progressBar:SfCircularProgressBar>
                 </Grid>
             </FlexLayout>
 

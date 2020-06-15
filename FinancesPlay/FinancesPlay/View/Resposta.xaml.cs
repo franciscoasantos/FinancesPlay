@@ -21,12 +21,16 @@ namespace FinancesPlay.View
         public Resposta(Alternativa Alternativa)
         {
             InitializeComponent();
+
+            pbDinheiro.Progress = (float)MainPage.dinheiro;
+            pbHumor.Progress = (float)MainPage.humor;
+            labelHumor.Text = Resposta.RetornarEmoji();
+            pbConhecimento.Progress = (float)MainPage.conhecimento;
             NavigationPage.SetHasNavigationBar(this, false);
             NavigationPage.SetHasBackButton(this, false);
             sfAvAvatar.ImageSource = MainPage.Avatar.Arquivo;
-            pbDinheiro.Percentage = (float)MainPage.dinheiro;
-            pbHumor.Percentage = (float)MainPage.humor;
-            pbConhecimento.Percentage = (float)MainPage.conhecimento;
+            labelNome.Text = MainPage.Nome;
+
 
             this.Alternativa = Alternativa;
         }
@@ -54,18 +58,18 @@ namespace FinancesPlay.View
 
         private void setDinheiro(double valor)
         {
-            MainPage.dinheiro += (valor * 1.852) / 100;
-            pbDinheiro.Percentage = (float)MainPage.dinheiro;
+            MainPage.dinheiro += (valor * 1.852);
+            pbDinheiro.Progress = (float)MainPage.dinheiro;
         }
         private void setHumor(double valor)
         {
-            MainPage.humor += (valor * 2) / 100;
-            pbHumor.Percentage = (float)MainPage.humor;
+            MainPage.humor += (valor * 2);
+            pbHumor.Progress = (float)MainPage.humor;
         }
         private void setConhecimento(double valor)
         {
-            MainPage.conhecimento += (valor * 1.3158) / 100;
-            pbConhecimento.Percentage = (float)MainPage.conhecimento;
+            MainPage.conhecimento += (valor * 1.3158);
+            pbConhecimento.Progress = (float)MainPage.conhecimento;
         }
         private void btnContinuar_Clicked(object sender, EventArgs e)
         {
@@ -84,6 +88,51 @@ namespace FinancesPlay.View
                     Nome = "certa" + i + ".png",
                     Arquivo = ImageSource.FromResource($"{assembly.GetName().Name}.Model.Imagens.certa" + i + ".png"),
                 });
+            }
+        }
+
+        public static string RetornarEmoji()
+        {
+            if(MainPage.humor >= 90)
+            {
+                return "\U0001F929";
+            }
+            else if(MainPage.humor < 90 && MainPage.humor >= 75)
+            {
+                return "\U0001F603";
+            }
+            else if(MainPage.humor < 75 && MainPage.humor >= 65)
+            {
+                return "\U0001F642";
+            }
+            else if(MainPage.humor < 65 && MainPage.humor >= 55)
+            {
+                return "\U0001F928";
+            }
+            //meio
+            else if(MainPage.humor < 55 && MainPage.humor >= 45)
+            {
+                return "\U0001F610";
+            }
+            else if(MainPage.humor < 45 && MainPage.humor >= 35)
+            {
+                return "\U0001F612";
+            }
+            else if(MainPage.humor < 35 && MainPage.humor >= 25)
+            {
+                return "\U0001F614";
+            }
+            else if(MainPage.humor < 25 && MainPage.humor >= 10)
+            {
+                return "\U0001F97A";
+            }
+            else if(MainPage.humor < 10)
+            {
+                return "\U0001F62D";
+            }
+            else
+            {
+                return "\U0001F610";
             }
         }
 

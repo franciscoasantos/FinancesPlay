@@ -25,25 +25,27 @@
         <FlexLayout Direction="Column" >
 
             <!-- Barra de status -->
-            <FlexLayout Direction="Column" FlexLayout.Grow="0.2" BackgroundColor="#0B132B">
-                <Grid Margin="10">
+            <FlexLayout Direction="Column" 
+                        FlexLayout.Grow="0.15" 
+                        BackgroundColor="#0B132B">
+                <Grid Margin="10"
+                      FlexLayout.Grow="0.15">
                     <Label x:Name="labelNome" 
                            TextColor="WhiteSmoke" 
                            FontAttributes="Bold" 
                            Grid.Row="2" Grid.Column="3" 
                            HorizontalOptions="Center" 
                            FontSize="20"/>
-                    <sfavatar:SfAvatarView 
-                    x:Name="sfAvAvatar"
-                    BackgroundColor="WhiteSmoke"
-                    ContentType="Custom"
-                    Grid.Row="0"
-                    Grid.Column="3" Grid.RowSpan="3" 
-                    VerticalOptions="Start"
-                    HorizontalOptions="Center"   
-                    HeightRequest="54"
-                    CornerRadius="20"
-                    WidthRequest="54"/>
+                    <sfavatar:SfAvatarView x:Name="sfAvAvatar"
+                                           BackgroundColor="WhiteSmoke"
+                                           ContentType="Custom"
+                                           Grid.Row="0"
+                                           Grid.Column="3" Grid.RowSpan="3" 
+                                           VerticalOptions="Start"
+                                           HorizontalOptions="Center"   
+                                           HeightRequest="54"
+                                           CornerRadius="20"
+                                           WidthRequest="54"/>
                     <progressBar:SfCircularProgressBar x:Name="pbDinheiro" 
                                                        Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
                                                        IndicatorOuterRadius="0.7" 
@@ -93,28 +95,32 @@
             </FlexLayout>
 
             <!-- Perguntas -->
-            <FlexLayout FlexLayout.Grow="1" 
-                    HorizontalOptions="Center"
-                    AlignContent="Center">
+            <FlexLayout FlexLayout.Grow="0.6" 
+                        HorizontalOptions="Center"
+                        AlignContent="Center"
+                        Direction="Column">
                 <Label Text="Lorem ipsum doaaaaa aaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaaalor sit amet?"
-                   x:Name="lblPergunta"
-                   Margin="10"
-                   FontSize="30"
-                   LineBreakMode="WordWrap"
-                   HorizontalTextAlignment="Center"
+                       FlexLayout.Grow="1"
+                       x:Name="lblPergunta"
+                       Margin="10"
+                       FontSize="30"
+                       LineBreakMode="WordWrap"
+                       HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
-                   TextColor="#cfdde8"/>
+                       TextColor="#cfdde8"/>
+                <Entry x:Name="input"></Entry>
+                <Button Text="Ir para o final"
+                        x:Name="final"
+                        Clicked="final_Clicked"></Button>
             </FlexLayout>
 
             <!-- Alternativas -->
-            <Grid>
+            <Grid FlexLayout.Grow="0.2">
                 <ScrollView>
                     <FlexLayout Direction="Column"
-                        FlexLayout.Grow="1"
-                        JustifyContent="Center"
-                        AlignContent="Center"
-                        x:Name="flAlternativas"/>
-
+                                JustifyContent="Center"
+                                AlignContent="Center"
+                                x:Name="flAlternativas"/>
                 </ScrollView>
             </Grid>
         </FlexLayout>

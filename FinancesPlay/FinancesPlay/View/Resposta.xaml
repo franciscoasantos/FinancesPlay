@@ -20,20 +20,27 @@
         <FlexLayout Direction="Column" >
 
             <!-- Barra de status -->
-            <FlexLayout Direction="Column" FlexLayout.Grow="0.2" BackgroundColor="#0B132B">
-                <Grid Margin="10">
-                    <Label x:Name="labelNome" TextColor="#cfdde8" FontAttributes="Bold" Grid.Row="2" Grid.Column="3" HorizontalOptions="Center" FontSize="20"></Label>
-                    <sfavatar:SfAvatarView 
-                    x:Name="sfAvAvatar"
-                    BackgroundColor="WhiteSmoke"
-                    ContentType="Custom"
-                    Grid.Row="0"
-                    Grid.Column="3" Grid.RowSpan="3" 
-                    VerticalOptions="Start"
-                    HorizontalOptions="Center"   
-                    HeightRequest="54"
-                    CornerRadius="20"
-                    WidthRequest="54"/>
+            <FlexLayout Direction="Column" 
+                        FlexLayout.Grow="0.15" 
+                        BackgroundColor="#0B132B">
+                <Grid Margin="10"
+                      FlexLayout.Grow="0.15">
+                    <Label x:Name="labelNome" 
+                           TextColor="#cfdde8" 
+                           FontAttributes="Bold" 
+                           Grid.Row="2" Grid.Column="3" 
+                           HorizontalOptions="Center" 
+                           FontSize="20"></Label>
+                    <sfavatar:SfAvatarView x:Name="sfAvAvatar"
+                                           BackgroundColor="WhiteSmoke"
+                                           ContentType="Custom"
+                                           Grid.Row="0"
+                                           Grid.Column="3" Grid.RowSpan="3" 
+                                           VerticalOptions="Start"
+                                           HorizontalOptions="Center"   
+                                           HeightRequest="54"
+                                           CornerRadius="20"
+                                           WidthRequest="54"/>
                     <progressBar:SfCircularProgressBar x:Name="pbDinheiro" 
                                                        Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
                                                        IndicatorOuterRadius="0.7" 
@@ -83,7 +90,8 @@
             </FlexLayout>
 
             <!-- Conteúdo  -->
-            <FlexLayout FlexLayout.Grow="1" Direction="Column">
+            <FlexLayout FlexLayout.Grow="0.7"
+                        Direction="Column">
                 <RelativeLayout>
                     <FlexLayout JustifyContent="Center"
                                 AlignItems="End">
@@ -104,14 +112,14 @@
 
             <!-- Botão continuar -->
             <FlexLayout Direction="Row"
-                    FlexLayout.Grow="0.2"
-                    AlignItems="Center"
-                    JustifyContent="SpaceEvenly">
+                        FlexLayout.Grow="0.1"
+                        AlignItems="Center"
+                        AlignContent="Center"
+                        JustifyContent="SpaceEvenly">
                 <Button Text="Continuar"
-                    x:Name="btnContinuar"
-                    Clicked="btnContinuar_Clicked"
-                    Style="{StaticResource botaoComecarContinuar}"/>
-
+                        x:Name="btnContinuar"
+                        Clicked="btnContinuar_Clicked"
+                        Style="{StaticResource botaoComecarContinuar}"/>
             </FlexLayout>
         </FlexLayout>
     </Grid>

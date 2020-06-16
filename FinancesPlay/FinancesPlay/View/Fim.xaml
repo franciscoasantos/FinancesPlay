@@ -16,13 +16,27 @@
                 </gradient:SfLinearGradientBrush>
             </gradient:SfGradientView.BackgroundBrush>
         </gradient:SfGradientView>
-        <FlexLayout Direction="Column">
-            <FlexLayout x:Name="flexLayoutStatus" 
-                        FlexLayout.Grow="4"
-                        JustifyContent="Center"
-                        AlignItems="Center">
-            <Label>Fim do jogo!</Label>
-            </FlexLayout>
+
+        <FlexLayout FlexLayout.Grow="1"
+                    Direction="Column">
+            <RelativeLayout FlexLayout.Grow="1">
+                <FlexLayout JustifyContent="Center"
+                            AlignItems="End">
+                    <Image x:Name="imageFim"
+                           Aspect="AspectFill"/>
+                </FlexLayout>
+                <StackLayout x:Name="stackLayout">
+                    <Label Text="Lorem ipsum doaaaaa aaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaaalor sit amet?"
+                               x:Name="labelTexto"
+                               Margin="20"
+                               LineBreakMode="WordWrap"
+                               FontSize="25"
+                               TextColor="WhiteSmoke"
+                               HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </RelativeLayout>
         </FlexLayout>
+
+
     </Grid>
 </ContentPage>

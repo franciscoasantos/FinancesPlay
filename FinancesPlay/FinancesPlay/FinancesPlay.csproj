@@ -12,6 +12,10 @@
 
   <ItemGroup>
     <None Remove="dados.json" />
+    <None Remove="Model\Imagens\100.png" />
+    <None Remove="Model\Imagens\25.png" />
+    <None Remove="Model\Imagens\50.png" />
+    <None Remove="Model\Imagens\75.png" />
     <None Remove="Model\Imagens\avatar1.png" />
     <None Remove="Model\Imagens\avatar2.png" />
     <None Remove="Model\Imagens\avatar3.png" />
@@ -30,6 +34,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Model\Imagens\25.png" />
+    <EmbeddedResource Include="Model\Imagens\100.png" />
+    <EmbeddedResource Include="Model\Imagens\50.png" />
+    <EmbeddedResource Include="Model\Imagens\75.png" />
     <EmbeddedResource Include="Model\Imagens\certa1.png" />
     <EmbeddedResource Include="Model\Imagens\errada1.png" />
     <EmbeddedResource Include="Model\Imagens\logo.png" />

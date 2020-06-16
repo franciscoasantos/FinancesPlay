@@ -65,16 +65,22 @@ namespace FinancesPlay.View
                             }
                         }
                     };
-                    
+
                     botaoAlternativa.Clicked += (sender, args) => Navigation.PushAsync(new View.Resposta(alternativa), false);
 
                     flAlternativas.Children.Add(botaoAlternativa);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 Navigation.PushAsync(new View.Fim(), false);
             }
+        }
+
+        private void final_Clicked(object sender, EventArgs e)
+        {
+            MainPage.conhecimento = Convert.ToInt32(input.Text);
+            Navigation.PushAsync(new View.Fim(), false);
         }
     }
 }

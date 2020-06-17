@@ -24,7 +24,7 @@ namespace FinancesPlay.View
 
             if (conhecimento < 25)
             {
-                labelTexto.Text = "Infelizmente, sua pontuação foi muito baixa. Com o conhecimento atual que você possui é muito fácil ficar endividado, tente jogar o novamente ou buscar ajuda profissonal. É muito provável que no futuro, você passará alguma dificuldade financeira.";
+                labelTexto.Text = "Infelizmente, sua pontuação foi muito baixa. Com o conhecimento atual que você possui é muito fácil ficar endividado, tente jogar novamente ou buscar ajuda profissonal. É muito provável que no futuro, você passará alguma dificuldade financeira.";
                 imageFim.Source = ObterImagemFinal("25");
             }
             else if (conhecimento >= 25 && conhecimento < 50)
@@ -34,7 +34,7 @@ namespace FinancesPlay.View
             }
             else if (conhecimento >= 50 && conhecimento < 75)
             {
-                labelTexto.Text = "Você possui um conhecimento bom. É provável que no futuro, você não saiba a melhor forma de investir seu dinheiro.";
+                labelTexto.Text = "Você possui um conhecimento bom. Para manter e ampliar sua sabedoria, é importante sempre ficar de olho nos seus gastos e sempre se controlar, para evitar que no futuro você tenha um descontrole da sua renda.";
                 imageFim.Source = ObterImagemFinal("75");
             }
             else if (conhecimento >= 75)

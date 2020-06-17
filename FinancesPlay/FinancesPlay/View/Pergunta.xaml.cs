@@ -77,10 +77,10 @@ namespace FinancesPlay.View
             }
         }
 
-        private void final_Clicked(object sender, EventArgs e)
-        {
-            MainPage.conhecimento = Convert.ToInt32(input.Text);
-            Navigation.PushAsync(new View.Fim(), false);
-        }
+        //private void final_Clicked(object sender, EventArgs e)
+        //{
+        //    MainPage.conhecimento = Convert.ToInt32(input.Text);
+        //    Navigation.PushAsync(new View.Fim(), false);
+        //}
     }
 }

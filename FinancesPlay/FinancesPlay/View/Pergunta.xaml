@@ -108,10 +108,10 @@
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
                        TextColor="#cfdde8"/>
-                <Entry x:Name="input"></Entry>
+                <!--<Entry x:Name="input"></Entry>
                 <Button Text="Ir para o final"
                         x:Name="final"
-                        Clicked="final_Clicked"></Button>
+                        Clicked="final_Clicked"></Button>-->
             </FlexLayout>
 
             <!-- Alternativas -->
